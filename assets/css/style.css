@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Header */
 
 header {
@@ -156,7 +160,6 @@ nav ul li.contact-item a:hover {
 
 .about-section-wrapper {
   width: 73%;
-  justify-content: center;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -201,6 +204,10 @@ nav ul li.contact-item a:hover {
 .our-offers-header {
   width: 50%;
   line-height: 26px;
+}
+
+.our-offers-header p {
+  font-size: 1.2rem;
 }
 
 .our-offers-header h2 {
@@ -330,7 +337,7 @@ nav ul li.contact-item a:hover {
 .use-cases-section-wrapper {
   width: 73%;
   margin: auto;
-  padding: 80px 0;
+  padding: 80px 0 115px 0;
 }
 
 .use-cases-content {
@@ -345,7 +352,7 @@ nav ul li.contact-item a:hover {
 .image-container img {
   width: auto;
   height: 410px;
-  background-color: #fff;
+  background-color: #f9fafa;
   border-radius: 17px;
 }
 
@@ -368,5 +375,322 @@ nav ul li.contact-item a:hover {
 .use-case-description h3 {
   font-weight: 600;
 }
+
+/* Prices */
+
+.prices-section {
+  width: 100%;
+  background-color: rgba(232, 230, 230, 0.4);
+  padding: 125px 0 70px 0;
+}
+
+.prices-section-wrapper {
+  width: 73%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prices-section-left-block {
+  width: 40%;
+}
+
+.prices-section-right-block {
+  width: 45%;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+.prices-section-left-block h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.prices-section-left-block p {
+  line-height: 26px;
+}
+
+.prices-section-left-block a {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 19px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.prices-section-left-block a:hover {
+  background-color: rgb(153, 110, 0);
+  border: 1px solid black;
+  color: black;
+}
+
+.prices-section-left-block p:last-of-type {
+  margin-bottom: 57px;
+}
+
+.price-right-block-description {
+  padding: 10px 32px 15px 32px;
+  background-color: black;
+  color: #fff;
+}
+
+.price-right-block-description h3 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.price-right-block-benefits {
+  background-color: rgb(255, 215, 239);
+  padding: 10px 32px;
+}
+
+.prices-section-right-block-wrapper {
+  line-height: 26px;
+}
+
+.price-from {
+  font-size: 0.8rem;
+  padding-right: 5px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.price-euro {
+  font-size: 1.2rem;
+  font-weight: 100;
+  position: relative;
+  top: -19px;
+}
+
+.period {
+  margin-top: 0;
+} 
+
+.price-tag {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.price-icon-benefit {
+  display: flex;
+  align-items: center;
+}
+
+.price-icon-benefit i {
+  padding-right: 15px;
+}
+
+.price-right-block-button {
+  padding: 47px 0 57px 0;
+  text-align: center;
+}
+
+.contact-us-button {
+  padding: 13px 33px;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.4s ease;
+  text-decoration: none;
+  color: black;
+}
+
+.contact-us-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Contact Us */
+
+.contact-us-section {
+  text-align: center;
+  padding-top: 120px;
+}
+
+.contact-us-section-wrapper {
+  width: 73%;
+  margin: auto;
+}
+
+.contact-us-header p {
+  font-size: 2rem;
+}
+
+.contact-us-header h3 {
+  font-size: 1.5rem;
+}
+
+.contact-us-header button {
+  margin-top: 27px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 19px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  border: 1px solid transparent; 
+}
+
+.contact-us-header button:hover {
+  background-color: rgb(153, 110, 0);
+  border: 1px solid black;
+  color: black;
+}
+
+.contact-us-content img {
+  position: relative;
+  bottom: -35px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 129px 0;
+  background-color: rgb(255, 191, 35);
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Offers Page */
+
+.offer-page-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 92px;
+}
+
+.offer-wrapper {
+  width: 30%;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: rgb(255, 215, 239);
+}
+
+.section-offers-offers-page h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 100px;
+  padding: 72px 0;
+  background-color: rgb(255, 215, 239);
+}
+
+.price-block-description {
+  padding: 10px 32px 15px 32px;
+  background-color: black;
+  color: #fff;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.price-block-description h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.prices-section-block-wrapper {
+    line-height: 26px;
+}
+
+.price-block-button {
+    padding: 40px 0 25px 0;
+    text-align: center;
+}
+
+.price-block-description button {
+    padding: 13px 33px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.4s ease;
+}
+
+.price-block-description button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.price-block-benefits {
+    background-color: rgb(255, 215, 239);
+    padding: 10px 32px;
+}
+
+/* Contact Us Page */
+
+.container {
+  max-width: 600px;
+  margin: 75px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
 
 

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prenez rendez-vous</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b14f14ea95.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header-offers">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/images/logo_2.svg" alt="Le logo de Invisible" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#apropos">À propos</a></li>
+          <li><a href="offers.html#formules">Nos Formules</a></li>
+          <li class="contact-item">
+            <a href="#contact">Prenez rendez-vous</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-offers-offers-page">
+        <h1 id="formules">Prenez rendez-vous</h1>
+        <div class="container">
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="name">Nom :</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Entreprise :</label>
+              <input type="text" id="company" name="company" required />
+            </div>
+            <div class="form-group">
+              <label for="contribution">Contribution AGEFIPH annuelle :</label>
+              <input
+                type="number"
+                id="contribution"
+                name="contribution"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email :</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Téléphone :</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="details">Détails de votre demande :</label>
+              <textarea
+                id="details"
+                name="details"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
