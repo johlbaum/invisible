@@ -58,12 +58,14 @@ nav ul li.contact-item a:hover {
 
 /* Banner */
 
-.banner {
+.banner-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 90px 200px;
+  padding: 90px 100px 50px 100px;
+  width: 73%;
+  margin: auto;
 }
 
 .banner-content {
@@ -85,7 +87,7 @@ nav ul li.contact-item a:hover {
   margin-bottom: 48px;
 }
 
-.banner img {
+.banner-section img {
   max-width: 100%; 
   height: auto; 
   width: 50%
@@ -140,6 +142,231 @@ nav ul li.contact-item a:hover {
 .icons-wrapper p {
   font-size: 0.8rem;
   width: min-content;
+}
+
+/* About */
+
+.about-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 191, 35);
+  padding: 100px 0;
+}
+
+.about-section-wrapper {
+  width: 73%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-left-content {
+  width: 45%;
+}
+
+.about-left-content h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.about-right-content {
+  width: 45%;
+}
+
+.about-right-content p span {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+.about-right-content p {
+  line-height: 26px;
+}
+
+/* Our offers */
+
+.our-offers-section {
+  display: flex;
+  justify-content: center;
+}
+
+.our-offers-section-wrapper {
+  width: 73%;
+  padding: 100px 0;
+}
+
+.our-offers-header {
+  width: 50%;
+  line-height: 26px;
+}
+
+.our-offers-header h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.our-offers-header span {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin-right: 5px;
+}
+
+.our-offers-cards-wrapper {
+  display: flex;
+}
+
+.our-offers-cards-wrapper {
+  margin-top: 90px;
+}
+
+.card-wrapper {
+  width: 25%;
+}
+
+.card-img img {
+  border: 2px solid black;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.card-description {
+  line-height: 26px;
+  width: 80%;
+}
+
+.card-description h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.card-description-tagline {
+  font-weight: 300;
+  font-weight: 600;
+}
+
+/* Challenge */
+
+.challenge-section {
+  padding-bottom: 80px;
+}
+
+.challenge-section-wrapper {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.challenge-section-left-block {
+  width: 45%;
+  position: relative;
+}
+
+.challenge-section-left-block img {
+  width: 100%;
+}
+
+.challenge-section-right-block {
+  width: 37%;
+}
+
+.challenge-section-right-block span {
+  font-weight: 100;
+}
+
+.challenge-section-right-block h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.challenge-section-right-block p {
+  line-height: 26px;
+}
+
+.challenge-section-left-block img:nth-child(1) {
+  position: absolute;
+  top: -83px;
+  left: 0;
+  width: 45%;
+  z-index: 0;
+}
+
+.challenge-section-left-block img:nth-child(2) {
+  z-index: 1;
+  position: relative;
+}
+
+.challenge-section-left-block img:nth-child(3) {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  width: 35%;
+  height: 127px;
+  z-index: 0;
+}
+
+.challenge-section-left-block img:nth-child(4) {
+  position: absolute;
+  bottom: -108px;
+  right: 97px;
+  width: 46%;
+  height: 144px;
+  z-index: 1;
+}
+
+/* Use cases */
+
+.use-cases-section {
+  background-color: rgb(255, 215, 239);
+}
+
+.use-cases-section-wrapper {
+  width: 73%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.use-cases-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container {
+  position: relative; 
+}
+
+.image-container img {
+  width: auto;
+  height: 410px;
+  background-color: #fff;
+  border-radius: 17px;
+}
+
+.use-cases-header h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 95px;
+}
+
+.use-case-description {
+  position: absolute; 
+  top: 50%; 
+  left: 10px; 
+  transform: translateY(-50%); 
+  padding: 10px; 
+  border-radius: 5px; 
+  line-height: 26px;
+}
+
+.use-case-description h3 {
+  font-weight: 600;
 }
 
 
