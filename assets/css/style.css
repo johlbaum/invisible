@@ -887,8 +887,12 @@ button {
   }
 
   .use-cases-wrapper {
-    padding: 40px 0;
+    padding: 40px 0 10px 0;
     width: 80%;
+  }
+
+  .use-cases-section {
+    padding: 0; 
   }
 
   .prices-left-content {
