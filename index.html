@@ -20,6 +20,7 @@
       src="https://kit.fontawesome.com/b14f14ea95.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/assets/js/main.js"></script>
   </head>
   <body>
     <header>
@@ -38,7 +39,22 @@
           </li>
         </ul>
       </nav>
+      <button class="burger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="offers.html">Nos Formules</a></li>
+        <li class="contact-item">
+          <a href="contact.html">Demande de devis</a>
+        </li>
+      </ul>
+    </div>
     <main>
       <section class="banner-section">
         <div class="banner-content-wrapper">
@@ -72,6 +88,7 @@
           </div>
         </div>
         <img
+          class="banner-img"
           src="assets/images/banner.svg"
           alt="Le logo de la société Invisible"
         />
