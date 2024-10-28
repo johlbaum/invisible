@@ -134,6 +134,7 @@ nav ul li.contact-item a:hover {
 .banner-content-main p {
   line-height: 28px;
   margin-bottom: 48px;
+  font-size: 1.3rem;
 }
 
 .banner-section img {
@@ -179,7 +180,7 @@ nav ul li.contact-item a:hover {
 }
 
 .icons-wrapper p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   width: min-content;
 }
 
@@ -638,10 +639,6 @@ button {
   transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #0056b3;
-}
-
 /* Responsive */ 
 
 /* Burger Button */
@@ -722,17 +719,28 @@ button:hover {
   transform: translateY(0); 
 }
 
+@media (max-width: 1100px) {
+    body, html {
+        font-size: 15px;
+    }
+}
 
 @media (max-width: 768px) {
   .burger {
     display: flex;
+    align-items: center;
   }
+
   nav ul {
     display: none;
   }
 
   header {
     padding: initial;
+  }
+
+  header .logo img {
+    width: 210px;
   }
 
   .banner-section {
@@ -748,10 +756,19 @@ button:hover {
 
   .banner-content-icons {
     flex-wrap: wrap;
+    flex-direction: column;
   }
 
   banner-section img {
     width: auto;
+  }
+
+  .banner-content-main p {
+    font-size: 16px;
+  }
+
+  .icons-wrapper p {
+    font-size: 14px;
   }
 
   .about-section {
