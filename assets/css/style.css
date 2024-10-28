@@ -345,45 +345,32 @@ nav ul li.contact-item a:hover {
 
 /* Use cases */
 
-.use-cases-section {
-  background-color: rgb(255, 215, 239);
-}
-
 .use-cases-wrapper {
   width: 73%;
   margin: auto;
-  padding: 80px 0 115px 0;
+}
+
+.use-cases-section {
+  background-color: rgb(255, 215, 239);
+  padding: 70px 0 100px 0;
+}
+
+.use-case-description h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.use-case-description {
+  line-height: 26px;
 }
 
 .use-cases-content {
   display: flex;
-  justify-content: space-between;
-  margin-top: 80px;
+  gap: 80px;
 }
 
-.image-container {
-  position: relative; 
-}
-
-.image-container img {
-  width: auto;
-  height: 410px;
-  background-color: #f9fafa;
-  border-radius: 17px;
-}
-
-.use-case-description {
-  position: absolute; 
-  top: 50%; 
-  left: 10px; 
-  transform: translateY(-50%); 
-  padding: 10px; 
-  border-radius: 5px; 
-  line-height: 26px;
-}
-
-.use-case-description h3 {
-  font-weight: 600;
+.use-case-wrapper {
+  flex: 1;
 }
 
 /* Prices */
@@ -743,6 +730,8 @@ button {
 
   header {
     padding: initial;
+    position: relative;
+    top: -20px;
   }
 
   header .logo img {
