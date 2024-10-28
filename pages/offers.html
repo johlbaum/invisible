@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nos offres</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <title>Invisible - Nos offres</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,24 +16,46 @@
       src="https://kit.fontawesome.com/b14f14ea95.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/assets/js/main.js"></script>
   </head>
   <body>
-    <header class="header-offers">
+    <header>
       <div class="logo">
-        <a href="index.html">
-          <img src="assets/images/logo_2.svg" alt="Le logo de Invisible" />
+        <a href="/index.html">
+          <img src="/assets/images/logo_2.svg" alt="Le logo de Invisible" />
         </a>
       </div>
-      <nav>
+
+      <!-- Bouton du menu burger unique -->
+      <button class="burger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Menu de navigation principal, caché pour mobile -->
+      <nav class="desktop-menu" aria-label="Main navigation">
         <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="index.html#apropos">À propos</a></li>
-          <li><a href="offers.html#formules">Nos Formules</a></li>
+          <li><a href="/index.html#accueil">Accueil</a></li>
+          <li><a href="/index.html#apropos">À propos</a></li>
+          <li><a href="/pages/offers.html">Nos Formules</a></li>
+          <li class="contact-item">
+            <a href="/pages/contact.html">Demande de devis</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Menu de navigation mobile -->
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="/index.html#accueil">Accueil</a></li>
+          <li><a href="/index.html#apropos">À propos</a></li>
+          <li><a href="offers.html">Nos Formules</a></li>
           <li class="contact-item">
             <a href="contact.html">Demande de devis</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
     <main>
       <section class="offers-page">
@@ -212,6 +234,8 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>&copy; 2024 Invisible. Tous droits réservés.</p>
+    </footer>
   </body>
 </html>

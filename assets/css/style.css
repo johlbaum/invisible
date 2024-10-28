@@ -149,7 +149,7 @@ nav ul li.contact-item a:hover {
   width: 110%;
 }
 
-.banner-support {
+.banner-img-support {
   position: absolute;
   bottom: -70px;
   z-index: -1;
@@ -719,6 +719,14 @@ button {
 }
 
 @media (max-width: 768px) {
+  .mobile-menu ul li a {
+    font-size: 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
   .burger {
     display: flex;
     align-items: center;
@@ -726,7 +734,7 @@ button {
 
   .logo {
     position: relative;
-    top: 5px;
+    top: 6px;
   }
 
   nav ul {
@@ -742,15 +750,45 @@ button {
   }
 
   .banner-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 90%;
     padding: initial;
+    padding-top: 30px;
+  }
+
+  .banner-text-wrapper {
+    width: auto;
+    padding-bottom: 0;
+  }
+
+  .banner-text-main h1 {
+    font-size: 2.6rem;
+  }
+
+  .banner-imgs-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-img {
+    width: auto;
+    width: 80%;
+  }
+
+  .banner-img-support {
+    display: none;
   }
 
   .banner-text-icons {
     flex-wrap: wrap;
     flex-direction: column;
     margin-top: 55px;
+    margin: 50px 0;
+  }
+
+  .icon-description-wrapper img {
+    padding-right: 22px;
   }
 
   banner-section img {
@@ -760,6 +798,7 @@ button {
   .banner-text-main p {
     font-size: 16px;
     margin-bottom: 38px;
+    width: auto;
   }
 
   .icon-description-wrapper p {
@@ -774,12 +813,16 @@ button {
     flex-direction: column;
   }
 
+  .about-section {
+    padding: 30px 0;
+  }
+
   .about-left-content {
-    width: 90%;
+    width: 100%;
   }
 
   .about-right-content {
-    width: 90%;
+    width: 100%;
   }
 
   .use-cases-content {
@@ -793,10 +836,25 @@ button {
   .about-wrapper {
     flex-direction: column;
     width: 90%;
+    margin: auto;
+  }
+
+  .our-offers-wrapper {
+    padding: 30px 0;
+  }
+
+  .our-offers-header p {
+    font-size: 1.1rem;
+  }
+
+  .our-offers-cards-wrapper {
+    margin-top: 70px;
   }
 
   .challenge-wrapper {
     flex-direction: column;
+    width: 90%;
+    margin: auto;
   }
 
   .challenge-section-left-content {
@@ -804,12 +862,14 @@ button {
   }
 
   .challenge-section-right-content {
-    width: 90%;
+    width: 100%;
+    margin-top: 60px;
   }
 
   .prices-wrapper {
     width: 90%;
     flex-direction: column;
+    margin: auto;
   }
 
   .our-offers-wrapper {
@@ -821,21 +881,115 @@ button {
   }
 
   .card-wrapper {
-    width: 90%;
+    width: 100%;
+    margin-bottom: 40px;
   }
 
   .card-description-wrapper {
-    width: 90%;
+    width: 100%;
+  }
+
+  .card-img img {
+    width: 55%;
+  }
+
+  .challenge-section {
+    padding: 80px 0 40px 0;
+  }
+
+  .use-cases-wrapper {
+    padding: 40px 0;
+    width: 80%;
   }
 
   .prices-left-content {
-    width: 90%;
+    width: 100%;
     padding-bottom: 70px;
   }
 
   .prices-content-wrapper {
-    width: 90%;
+    width: 100%;
   }
+
+  .use-cases-content {
+    margin-top: 55px;
+  }
+
+  .use-case-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .prices-section {
+    padding: 50px 0 70px 0;
+  }
+
+  .price-content-description h3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  .price {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin-bottom: 5px;
+  }
+
+  .contact-us-section {
+    padding-top: 40px;
+  }
+
+  .contact-us-header p {
+    font-size: 1.4rem;
+    margin-bottom: 38px;
+  }
+
+  .contact-us-header h3 {
+    display: none;
+  }
+
+  footer {
+    padding: 50px 0;
+  }
+
+  /* Offers Page  */
+
+  .offer-page-wrapper {
+    flex-direction: column;
+    padding: initial;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+  }
+
+  .offer-wrapper {
+    width: 100%;
+    margin: 25px 0;
+  }
+
+  .offers-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .price-content-description {
+    height: auto; 
+  }
+
+  .price-content-button {
+    padding: 40px 0 40px 0;
+  }
+
+    /* Contact us Page  */
+
+  .container {
+    width: 77%;
+    margin: 60px auto;
+    padding: 20px;
+  }
+
+  form {
+    width: 87%;
+  }
+
 }
 
 
