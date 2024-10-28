@@ -25,7 +25,7 @@ html {
   color: #fff;
   padding: 10px 19px;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: background-color 0.4s ease;
   border: 1px solid transparent;
@@ -117,71 +117,69 @@ nav ul li.contact-item a:hover {
   margin: auto;
 }
 
-.banner-content-wrapper {
+.banner-text-wrapper {
   width: 50%;
-  margin-bottom: 140px;
+  padding-bottom: 160px;
 }
 
-.banner-content-main h1 {
+.banner-text-main h1 {
   font-family: "League Spartan", serif;
   font-size: 3.2rem;
   font-weight: 400;
 }
 
-.banner-content-main {
+.banner-text-main {
   width: 95%;
 }
 
-.banner-content-main p {
+.banner-text-main p {
   line-height: 28px;
   margin-bottom: 48px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 300;
+  width: 80%;
 }
 
-.banner-section img {
-  max-width: 100%; 
-  height: auto; 
-  width: 50%
+.banner-imgs-wrapper {
+  position: relative;
+  width: 50%;
 }
 
 .banner-img {
-  max-width: 100%; 
-  height: auto; 
-  width: 50%
+  width: 110%;
 }
 
 .banner-support {
   position: absolute;
-  bottom: 100px;
+  bottom: -70px;
   z-index: -1;
   opacity: 0.3;
-  left: 50%; 
-  transform: translateX(-50%); 
+  left: 13%;
+  transform: translateX(-50%);
 }
 
-.banner-content-icons {
+.banner-text-icons {
   display: flex;
   margin-top: 80px;
 }
 
-.banner-content-icons .icons-wrapper:first-child p {
+.banner-text-icons .icon-description-wrapper:first-child p {
   width: auto;
   white-space: nowrap;
 }
 
-.icons-wrapper {
+.icon-description-wrapper {
   display: flex;
   align-items: center;
   margin-right: 50px;
 }
 
-.icons-wrapper img {
+.icon-description-wrapper img {
   width: 32px;
   padding-right: 13px;
 }
 
-.icons-wrapper p {
+.icon-description-wrapper p {
   font-size: 0.9rem;
   width: min-content;
 }
@@ -196,7 +194,7 @@ nav ul li.contact-item a:hover {
   padding: 100px 0;
 }
 
-.about-section-wrapper {
+.about-wrapper {
   width: 73%;
   align-items: center;
   display: flex;
@@ -228,7 +226,7 @@ nav ul li.contact-item a:hover {
   justify-content: center;
 }
 
-.our-offers-section-wrapper {
+.our-offers-wrapper {
   width: 73%;
   padding: 100px 0;
 }
@@ -264,12 +262,12 @@ nav ul li.contact-item a:hover {
   font-weight: 600;
 }
 
-.card-description {
+.card-description-wrapper {
   line-height: 26px;
   width: 80%;
 }
 
-.card-description h3 {
+.card-description-wrapper h3 {
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -285,7 +283,7 @@ nav ul li.contact-item a:hover {
   padding-bottom: 80px;
 }
 
-.challenge-section-wrapper {
+.challenge-wrapper {
   width: 80%;
   display: flex;
   margin: auto;
@@ -293,28 +291,28 @@ nav ul li.contact-item a:hover {
   justify-content: space-between;
 }
 
-.challenge-section-left-block {
+.challenge-section-left-content {
   width: 45%;
   position: relative;
 }
 
-.challenge-section-left-block img {
+.challenge-section-left-content img {
   width: 100%;
 }
 
-.challenge-section-right-block {
+.challenge-section-right-content {
   width: 37%;
 }
 
-.challenge-section-right-block span {
+.challenge-section-right-content span {
   font-weight: 100;
 }
 
-.challenge-section-right-block p {
+.challenge-section-right-content p {
   line-height: 26px;
 }
 
-.challenge-section-left-block img:nth-child(1) {
+.challenge-section-left-content img:nth-child(1) {
   position: absolute;
   top: -83px;
   left: 0;
@@ -322,12 +320,12 @@ nav ul li.contact-item a:hover {
   z-index: 0;
 }
 
-.challenge-section-left-block img:nth-child(2) {
+.challenge-section-left-content img:nth-child(2) {
   z-index: 1;
   position: relative;
 }
 
-.challenge-section-left-block img:nth-child(3) {
+.challenge-section-left-content img:nth-child(3) {
   position: absolute;
   bottom: -20px;
   right: 0;
@@ -336,7 +334,7 @@ nav ul li.contact-item a:hover {
   z-index: 0;
 }
 
-.challenge-section-left-block img:nth-child(4) {
+.challenge-section-left-content img:nth-child(4) {
   position: absolute;
   bottom: -108px;
   right: 97px;
@@ -351,7 +349,7 @@ nav ul li.contact-item a:hover {
   background-color: rgb(255, 215, 239);
 }
 
-.use-cases-section-wrapper {
+.use-cases-wrapper {
   width: 73%;
   margin: auto;
   padding: 80px 0 115px 0;
@@ -396,7 +394,7 @@ nav ul li.contact-item a:hover {
   padding: 125px 0 70px 0;
 }
 
-.prices-section-wrapper {
+.prices-wrapper {
   width: 73%;
   margin: auto;
   display: flex;
@@ -404,42 +402,39 @@ nav ul li.contact-item a:hover {
   align-items: center;
 }
 
-.prices-section-left-block {
+.prices-left-content {
   width: 40%;
 }
 
-.prices-section-right-block {
+.prices-content-wrapper {
   width: 45%;
   border: 2px solid black;
   border-radius: 6px;
-}
-
-.prices-section-left-block p {
   line-height: 26px;
 }
 
-.prices-section-left-block p:last-of-type {
+.prices-left-content p {
+  line-height: 26px;
+}
+
+.prices-left-content p:last-of-type {
   margin-bottom: 57px;
 }
 
-.price-right-block-description {
+.price-right-content-description {
   padding: 10px 32px 15px 32px;
   background-color: black;
   color: #fff;
 }
 
-.price-right-block-description h3 {
+.price-right-content-description h3 {
   font-size: 1.6rem;
   font-weight: 300;
 }
 
-.price-right-block-benefits {
+.price-right-content-benefits {
   background-color: rgb(255, 215, 239);
   padding: 10px 32px;
-}
-
-.prices-section-right-block-wrapper {
-  line-height: 26px;
 }
 
 .price-from {
@@ -478,7 +473,7 @@ nav ul li.contact-item a:hover {
   padding-right: 15px;
 }
 
-.price-right-block-button {
+.price-right-content-button {
   padding: 47px 0 57px 0;
   text-align: center;
 }
@@ -490,7 +485,7 @@ nav ul li.contact-item a:hover {
   padding-top: 120px;
 }
 
-.contact-us-section-wrapper {
+.contact-us-wrapper {
   width: 73%;
   margin: auto;
 }
@@ -536,7 +531,7 @@ footer a {
   background-color: rgb(255, 215, 239);
 }
 
-.section-offers-offers-page h1 {
+.offers-page h1 {
   font-size: 2.4rem;
   font-weight: 400;
   text-align: center;
@@ -547,7 +542,7 @@ footer a {
   font-family: "League Spartan", serif;
 }
 
-.price-block-description {
+.price-content-description {
   padding: 10px 32px 15px 32px;
   background-color: black;
   color: #fff;
@@ -557,21 +552,17 @@ footer a {
   justify-content: center;
 }
 
-.price-block-description h3 {
+.price-content-description h3 {
     font-size: 1.6rem;
     font-weight: 300;
 }
 
-.prices-section-block-wrapper {
-    line-height: 26px;
-}
-
-.price-block-button {
+.price-content-button {
     padding: 40px 0 25px 0;
     text-align: center;
 }
 
-.price-block-description button {
+.price-content-description button {
     padding: 13px 33px;
     cursor: pointer;
     background-color: #fff;
@@ -581,11 +572,11 @@ footer a {
     transition: background-color 0.4s ease;
 }
 
-.price-block-description button:hover {
+.price-content-description button:hover {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-.price-block-benefits {
+.price-content-benefits {
     background-color: rgb(255, 215, 239);
     padding: 10px 32px;
 }
@@ -666,15 +657,15 @@ button {
 /* Burger Animation */
 
 .burger.open span:nth-child(1) {
-  transform: rotate(45deg) translateY(8px);
+    transform: rotate(45deg) translate(5px, 6px);
 }
 
 .burger.open span:nth-child(2) {
-  opacity: 0;
+    opacity: 0; 
 }
 
 .burger.open span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px);
+    transform: rotate(-45deg) translate(5px, -7px);
 }
 
 /* Mobile Menu */
@@ -699,7 +690,7 @@ button {
 .mobile-menu ul {
   list-style-type: none;
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .mobile-menu ul li {
@@ -733,6 +724,11 @@ button {
     align-items: center;
   }
 
+  .logo {
+    position: relative;
+    top: 5px;
+  }
+
   nav ul {
     display: none;
   }
@@ -751,26 +747,27 @@ button {
     padding: initial;
   }
 
-  .banner-content-wrapper {
-    width: 90%;
-    margin-bottom: 30px;
-  }
-
-  .banner-content-icons {
+  .banner-text-icons {
     flex-wrap: wrap;
     flex-direction: column;
+    margin-top: 55px;
   }
 
   banner-section img {
     width: auto;
   }
 
-  .banner-content-main p {
+  .banner-text-main p {
     font-size: 16px;
+    margin-bottom: 38px;
   }
 
-  .icons-wrapper p {
+  .icon-description-wrapper p {
     font-size: 14px;
+  }
+
+  .icon-description-wrapper p {
+    width: auto;
   }
 
   .about-section {
@@ -793,29 +790,29 @@ button {
     flex-direction: column;
   }
 
-  .about-section-wrapper {
+  .about-wrapper {
     flex-direction: column;
     width: 90%;
   }
 
-  .challenge-section-wrapper {
+  .challenge-wrapper {
     flex-direction: column;
   }
 
-  .challenge-section-left-block {
+  .challenge-section-left-content {
     width: 90%;
   }
 
-  .challenge-section-right-block {
+  .challenge-section-right-content {
     width: 90%;
   }
 
-  .prices-section-wrapper {
+  .prices-wrapper {
     width: 90%;
     flex-direction: column;
   }
 
-  .our-offers-section-wrapper {
+  .our-offers-wrapper {
     width: 90%;
   }
 
@@ -827,16 +824,16 @@ button {
     width: 90%;
   }
 
-  .card-description {
+  .card-description-wrapper {
     width: 90%;
   }
 
-  .prices-section-left-block {
+  .prices-left-content {
     width: 90%;
     padding-bottom: 70px;
   }
 
-  .prices-section-right-block {
+  .prices-content-wrapper {
     width: 90%;
   }
 }
