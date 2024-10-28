@@ -989,8 +989,12 @@ button {
   form {
     width: 87%;
   }
-
 }
+
+@media only screen and (max-width: 992px) and (orientation: landscape) {
+  
+}
+
 
 
 
