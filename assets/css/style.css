@@ -5,6 +5,7 @@
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-weight: 300;
 }
 
 html {
@@ -135,6 +136,7 @@ nav ul li.contact-item a:hover {
   line-height: 28px;
   margin-bottom: 48px;
   font-size: 1.3rem;
+  font-weight: 300;
 }
 
 .banner-section img {
