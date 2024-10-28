@@ -71,7 +71,7 @@ header .logo img {
 
 nav ul {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 nav ul li {
@@ -83,6 +83,7 @@ nav ul li a {
   color: rgb(0, 0, 0);
   margin: 0 21px;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 nav ul li a:hover {
@@ -250,6 +251,7 @@ nav ul li.contact-item a:hover {
 .our-offers-cards-wrapper {
   display: flex;
   margin-top: 90px;
+  gap: 45px;
 }
 
 .card-wrapper {
@@ -260,11 +262,13 @@ nav ul li.contact-item a:hover {
   border: 2px solid black;
   border-radius: 6px;
   font-weight: 600;
+  width: 100%;
 }
 
 .card-description-wrapper {
   line-height: 26px;
-  width: 80%;
+  width: 100%;
+  padding-top: 20px;
 }
 
 .card-description-wrapper h3 {
@@ -716,7 +720,8 @@ button {
 
   .burger {
     display: flex;
-    align-items: center;
+    width: fit-content;
+    order: 2;
   }
 
   .logo {
@@ -940,10 +945,6 @@ button {
     display: none;
   }
 
-  footer {
-    padding: 50px 0;
-  }
-
   /* Offers Page  */
 
   .offer-page-wrapper {
@@ -985,7 +986,17 @@ button {
 }
 
 @media only screen and (max-width: 992px) and (orientation: landscape) {
-  
+  .banner-img-support {
+    display: none;
+  }
+
+  .price-content-description {
+    height: auto;
+  }
+
+  footer {
+    padding: 50px 0;
+  }
 }
 
 
