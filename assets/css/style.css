@@ -133,7 +133,7 @@ nav ul li.contact-item a:hover {
 }
 
 .banner-text-main p {
-  line-height: 28px;
+  line-height: 30px;
   margin-bottom: 48px;
   font-size: 1.2rem;
   font-weight: 300;
@@ -216,7 +216,7 @@ nav ul li.contact-item a:hover {
 }
 
 .about-right-content p {
-  line-height: 26px;
+  line-height: 30px;
 }
 
 /* Our offers */
@@ -233,7 +233,7 @@ nav ul li.contact-item a:hover {
 
 .our-offers-header {
   width: 50%;
-  line-height: 26px;
+  line-height: 30px;
 }
 
 .our-offers-header p {
@@ -265,7 +265,7 @@ nav ul li.contact-item a:hover {
 }
 
 .card-description-wrapper {
-  line-height: 26px;
+  line-height: 30px;
   width: 100%;
   padding-top: 20px;
 }
@@ -312,7 +312,7 @@ nav ul li.contact-item a:hover {
 }
 
 .challenge-section-right-content p {
-  line-height: 26px;
+  line-height: 30px;
 }
 
 .challenge-section-left-content img:nth-child(1) {
@@ -364,7 +364,7 @@ nav ul li.contact-item a:hover {
 }
 
 .use-case-description {
-  line-height: 26px;
+  line-height: 30px;
 }
 
 .use-cases-content {
@@ -400,11 +400,11 @@ nav ul li.contact-item a:hover {
   width: 45%;
   border: 2px solid black;
   border-radius: 6px;
-  line-height: 26px;
+  line-height: 30px;
 }
 
 .prices-left-content p {
-  line-height: 26px;
+  line-height: 30px;
 }
 
 .prices-left-content p:last-of-type {
@@ -480,14 +480,6 @@ nav ul li.contact-item a:hover {
   margin: auto;
 }
 
-.contact-us-header p {
-  font-size: 2rem;
-}
-
-.contact-us-header h3 {
-  font-size: 1.5rem;
-}
-
 .contact-us-content img {
   position: relative;
   bottom: -35px;
@@ -497,7 +489,7 @@ nav ul li.contact-item a:hover {
 
 footer {
   text-align: center;
-  padding: 129px 0;
+  padding: 50px 0;
   background-color: rgb(255, 191, 35);
 }
 
@@ -538,7 +530,6 @@ footer a {
   padding: 10px 32px 15px 32px;
   background-color: black;
   color: #fff;
-  height: 580px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -726,6 +717,7 @@ button {
   .logo {
     position: relative;
     top: 7px;
+    left: -4px;
   }
 
   .btn-outline {
@@ -906,6 +898,11 @@ button {
 
   .card-description-wrapper {
     width: 100%;
+    padding-top: 0;
+  }
+
+  .card-img {
+    text-align: center;
   }
 
   .card-img img {
@@ -961,15 +958,6 @@ button {
     padding-top: 40px;
   }
 
-  .contact-us-header p {
-    font-size: 1.4rem;
-    margin-bottom: 38px;
-  }
-
-  .contact-us-header h3 {
-    display: none;
-  }
-
   /* Offers Page  */
 
   .offer-page-wrapper {
@@ -1017,10 +1005,6 @@ button {
 
   .price-content-description {
     height: auto;
-  }
-
-  footer {
-    padding: 50px 0;
   }
 
   .burger {
