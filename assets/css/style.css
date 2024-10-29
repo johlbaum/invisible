@@ -939,6 +939,10 @@ button {
     margin-bottom: 40px;
   }
 
+  .use-cases-content {
+    gap: 0px;
+  }
+
   .prices-section {
     padding: 50px 0 70px 0;
   }
