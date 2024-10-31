@@ -63,6 +63,7 @@ header {
   height: 126px;
   justify-content: space-between;
   padding-right: 20px;
+  margin: 0 150px;
 }
 
 header .logo img {
@@ -755,6 +756,7 @@ button {
   header {
     position: relative;
     top: -20px;
+    margin: 0;
   }
 
   header .logo img {
