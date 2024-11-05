@@ -1,5 +1,5 @@
 <?php
-// Chargement de l'autoloader de Composer
+
 require __DIR__ . '/vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -21,14 +21,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'ssl0.ovh.net';
         $mail->SMTPAuth = true;
-        $mail->Username = 'contact@talentinvisbile.com'; // Votre adresse e-mail pro
-        $mail->Password = 'Frenier77410'; // Mot de passe de l’e-mail
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Pour SSL
-        $mail->Port = 465; // Port pour SSL
+        $mail->Username = 'contact@talentinvisbile.com';
+        $mail->Password = 'Frenier77410';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->Port = 465;
 
         // Paramètres de l’e-mail
         $mail->setFrom('contact@talentinvisbile.com', 'Invisible');
-        $mail->addAddress('contact@talentinvisbile.com'); // Destinataire
+        $mail->addAddress('contact@talentinvisbile.com');
 
         $mail->Subject = "Demande de devis de $name";
         $mail->Body = "
