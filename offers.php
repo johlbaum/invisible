@@ -51,54 +51,54 @@
 <body>
 	<?php include 'includes/header.php'; ?>
 	<main>
-		<section class="offers-page">
-			<h1 id="formules">Explorez nos formules</h1>
-			<div class="offer-page-wrapper">
-				<div class="offer-wrapper">
-					<div class="price-content-description">
-						<h3>Formule Essentielle : Formation Standard + Abonnement</h3>
-						<p class="price">
-							<span class="price-from">À partir de</span>10 000
-							<span class="price-euro">€ HT</span>
+		<section class="offers">
+			<h1 class="offers__title" id="formules">Explorez nos formules</h1>
+			<div class="offers__wrapper">
+				<div class="offer">
+					<div class="offer__description">
+						<h3 class="offer__title">Formule Essentielle : Formation Standard + Abonnement</h3>
+						<p class="offer__price">
+							<span class="offer__price-from">À partir de</span> 10 000
+							<span class="offer__price-euro">€ HT</span>
 						</p>
-						<p class="period">Pour 12 mois</p>
-						<p class="price-benefits">
+						<p class="offer__period">Pour 12 mois</p>
+						<p class="offer__benefits">
 							Formation rentable à partir de 1 RQTH détectée, générant 5 000 €
 							d’économies annuelles, soit 25 000 € sur cinq ans.
 						</p>
-						<div class="price-content-button">
+						<div class="offer__button">
 							<a href="contact.php" class="btn-outline">Demande de devis</a>
 						</div>
 					</div>
-					<div class="price-content-benefits">
-						<p class="price-tag">
+					<div class="offer__benefits-content">
+						<p class="offer__tag">
 							" L’inclusion simplifiée pour un impact immédiat "
 						</p>
-						<div class="price-icon-benefit">
+						<div class="offer__benefit">
 							<i class="fa-solid fa-circle-check"></i>
 							<p>
 								Audit de départ pour évaluer les pratiques actuelles en
 								matière de handicap
 							</p>
 						</div>
-						<div class="price-icon-benefit">
+						<div class="offer__benefit">
 							<i class="fa-solid fa-circle-check"></i>
 							<p>
 								Formation de sensibilisation clé en main (non personnalisée)
 							</p>
 						</div>
-						<div class="price-icon-benefit">
+						<div class="offer__benefit">
 							<i class="fa-solid fa-circle-check"></i>
 							<p>Recommandations pour orienter l’action</p>
 						</div>
-						<div class="price-icon-benefit">
+						<div class="offer__benefit">
 							<i class="fa-solid fa-circle-check"></i>
 							<p>
 								Accès à l'INVISIBLEAcadémie : FAQ et ressources pratiques pour
 								collaborateurs et managers
 							</p>
 						</div>
-						<div class="price-icon-benefit">
+						<div class="offer__benefit">
 							<i class="fa-solid fa-circle-check"></i>
 							<p>
 								Abonnement sur 12 mois : accès continu à la formation, mises à
@@ -107,50 +107,50 @@
 						</div>
 					</div>
 				</div>
-				<div class="offer-wrapper">
-					<div class="price-content-description">
-						<h3>
+				<div class="offer">
+					<div class="offer__description">
+						<h3 class="offer__title">
 							Formule Personnalisée : Formation Adaptée + Abonnement 12 Mois
 						</h3>
-						<p class="price">
-							<span class="price-from">À partir de</span>25 000
-							<span class="price-euro">€ HT</span>
+						<p class="offer__price">
+							<span class="offer__price-from">À partir de</span> 25 000
+							<span class="offer__price-euro">€ HT</span>
 						</p>
-						<p class="period">Pour 12 mois</p>
-						<p class="price-benefits">
+						<p class="offer__period">Pour 12 mois</p>
+						<p class="offer__benefits">
 							Formation rentable à partir de 2 RQTH détectées, générant 10 000
 							€ d’économies annuelles, soit 50 000 € sur cinq ans.
 						</p>
-						<div class="price-content-button">
+						<div class="offer__button">
 							<a href="contact.php" class="btn-outline">Demande de devis</a>
 						</div>
 					</div>
-					<div class="price-content-benefits">
-						<p class="price-tag">
+					<div class="offer__benefits-content">
+						<p class="offer__tag">
 							" Des solutions ajustées à vos besoins d’inclusion "
 						</p>
-						<div class="price-icon-benefit">
+						<div class="offer__benefit">
 							<i class="fa-solid fa-circle-check"></i>
 							<p>
 								Audit approfondi pour analyser les besoins spécifiques de
 								l’entreprise
 							</p>
 						</div>
-						<div class="price-icon-benefit">
+						<div class="offer__benefit">
 							<i class="fa-solid fa-circle-check"></i>
 							<p>
 								Formation personnalisée, avec modules interactifs adaptés aux
 								enjeux internes
 							</p>
 						</div>
-						<div class="price-icon-benefit">
+						<div class="offer__benefit">
 							<i class="fa-solid fa-circle-check"></i>
 							<p>
 								Accès à l'INVISIBLEAcadémie : FAQ et ressources pratiques pour
 								collaborateurs et managers
 							</p>
 						</div>
-						<div class="price-icon-benefit">
+						<div class="offer__benefit">
 							<i class="fa-solid fa-circle-check"></i>
 							<p>
 								Abonnement sur 12 mois : accès illimité à la formation,
@@ -160,66 +160,56 @@
 						</div>
 					</div>
 				</div>
-				<div class="offer-wrapper">
-					<div class="price-content-description">
-						<h3>
+				<div class="offer">
+					<div class="offer__description">
+						<h3 class="offer__title">
 							Formule Premium : Formation Personnalisée + Accompagnement
 							Digital + Abonnement 12 Mois
 						</h3>
-						<p class="price">
-							<span class="price-from">À partir de</span>50 000
-							<span class="price-euro">€ HT</span>
+						<p class="offer__price">
+							<span class="offer__price-from">À partir de</span> 50 000
+							<span class="offer__price-euro">€ HT</span>
 						</p>
-						<p class="period">Pour 12 mois</p>
-						<p class="price-benefits">
+						<p class="offer__period">Pour 12 mois</p>
+						<p class="offer__benefits">
 							Formation rentable à partir de 4 RQTH détectées, générant 20 000
 							€ d’économies annuelles, soit 100 000 € sur cinq ans.
 						</p>
-						<div class="price-content-button">
+						<div class="offer__button">
 							<a href="contact.php" class="btn-outline">Demande de devis</a>
 						</div>
 					</div>
-					<div class="price-content-benefits">
-						<p class="price-tag">
+					<div class="offer__benefits-content">
+						<p class="offer__tag">
 							" Une inclusion durable avec accompagnement de A à Z "
 						</p>
-						<div class="price-icon-benefit">
+						<div class="offer__benefit">
 							<i class="fa-solid fa-circle-check"></i>
 							<p>Audit approfondi pour établir un plan d’action sur-mesure</p>
 						</div>
-						<div class="price-icon-benefit">
+						<div class="offer__benefit">
 							<i class="fa-solid fa-circle-check"></i>
 							<p>
 								Formation entièrement personnalisée et spécifique aux besoins
 								de l’entreprise
 							</p>
 						</div>
-						<div class="price-icon-benefit">
+						<div class="offer__benefit">
 							<i class="fa-solid fa-circle-check"></i>
-							<p>
-								Coaching pour les équipes RH et les managers, suivi des
-								résultats et reporting
-							</p>
+							<p>Accompagnement digital par un expert tout au long de l'année</p>
 						</div>
-						<div class="price-icon-benefit">
+						<div class="offer__benefit">
 							<i class="fa-solid fa-circle-check"></i>
 							<p>
 								Accès à l'INVISIBLEAcadémie : FAQ et ressources pratiques pour
 								collaborateurs et managers
 							</p>
 						</div>
-						<div class="price-icon-benefit">
+						<div class="offer__benefit">
 							<i class="fa-solid fa-circle-check"></i>
 							<p>
-								Boîte mail dédiée pour répondre aux questions des
-								collaborateurs tout au long de l’année
-							</p>
-						</div>
-						<div class="price-icon-benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>
-								Abonnement sur 12 mois pour un suivi et un accompagnement
-								prolongé
+								Abonnement sur 12 mois : accès illimité à la formation,
+								suivi régulier, évaluations et ajustements
 							</p>
 						</div>
 					</div>

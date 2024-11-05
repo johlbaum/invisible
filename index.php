@@ -52,39 +52,41 @@
     <?php include 'includes/header.php'; ?>
     <main>
         <section class="banner">
-            <div class="banner__text">
-                <h1 class="banner__title">Sensibiliser. Détecter. Accompagner.</h1>
-                <p class="banner__description">
-                    Vous payez une contribution AGEFIPH élevée ? Vous manquez de temps
-                    pour déployer une véritable politique handicap ou pour former vos
-                    équipes à l'inclusion ? Vous souhaitez détecter les talents
-                    invisibles sans alourdir votre quotidien RH ? INVISIBLE est là
-                    pour vous apporter une solution concrète et personnalisée, qui
-                    réduit vos coûts tout en valorisant la diversité au sein de votre
-                    entreprise.
-                </p>
-                <a href="contact.php" class="banner__btn">Demande de devis</a>
+            <div class="banner__wrapper">
+                <div class="banner__text">
+                    <h1 class="banner__title">Sensibiliser. Détecter. Accompagner.</h1>
+                    <p class="banner__description">
+                        Vous payez une contribution AGEFIPH élevée ? Vous manquez de temps
+                        pour déployer une véritable politique handicap ou pour former vos
+                        équipes à l'inclusion ? Vous souhaitez détecter les talents
+                        invisibles sans alourdir votre quotidien RH ? INVISIBLE est là
+                        pour vous apporter une solution concrète et personnalisée, qui
+                        réduit vos coûts tout en valorisant la diversité au sein de votre
+                        entreprise.
+                    </p>
+                    <a href="contact.php" class="banner__btn">Demande de devis</a>
 
-                <div class="banner__icons">
-                    <div class="banner__icon-wrapper">
-                        <img src="assets/icons/padlock.svg" alt="Icône de sécurité" class="banner__icon" />
-                        <p class="banner__icon-text">Tout en 1</p>
-                    </div>
-                    <div class="banner__icon-wrapper">
-                        <img src="assets/icons/window.svg" alt="Icône de flexibilité" class="banner__icon" />
-                        <p class="banner__icon-text">Entièrement personnalisable</p>
-                    </div>
-                    <div class="banner__icon-wrapper">
-                        <img src="assets/icons/together.svg" alt="Icône de collaboration" class="banner__icon" />
-                        <p class="banner__icon-text">Accompagnement sur mesure</p>
+                    <div class="banner__icons">
+                        <div class="banner__icon-wrapper">
+                            <img src="assets/icons/padlock.svg" alt="Icône de sécurité" class="banner__icon" />
+                            <p class="banner__icon-text">Tout en 1</p>
+                        </div>
+                        <div class="banner__icon-wrapper">
+                            <img src="assets/icons/window.svg" alt="Icône de flexibilité" class="banner__icon" />
+                            <p class="banner__icon-text">Entièrement personnalisable</p>
+                        </div>
+                        <div class="banner__icon-wrapper">
+                            <img src="assets/icons/together.svg" alt="Icône de collaboration" class="banner__icon" />
+                            <p class="banner__icon-text">Accompagnement sur mesure</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="banner__images">
-                <img src="assets/images/banner.svg" alt="Illustration principale" class="banner__image" />
-                <img src="assets/images/banner_support.webp" alt="Illustration de support"
-                    class="banner__image--support" />
+                <div class="banner__images">
+                    <img src="assets/images/banner.svg" alt="Illustration principale" class="banner__image" />
+                    <img src="assets/images/banner_support.webp" alt="Illustration de support"
+                        class="banner__image--support" />
+                </div>
             </div>
         </section>
 
@@ -204,27 +206,29 @@
                 </div>
             </div>
         </section>
-        <section class="challenge-section">
-            <div class="challenge-wrapper">
-                <div class="challenge-section-left-content">
-                    <img src="assets/images/challenge_blue_round.svg" alt="Illustration représentant un rond bleu." />
+        <section class="challenge" id="challenge">
+            <div class="challenge__wrapper">
+                <div class="challenge__left-content">
+                    <img src="assets/images/challenge_blue_round.svg" alt="Illustration représentant un rond bleu."
+                        class="challenge__image" />
                     <img src="assets/images/challenge_main.svg"
-                        alt="Illustration d'une fenêtre d'application avec des personnages aux quatre coins, symbolisant la collaboration." />
-                    <img src="assets/images/challenge_square.svg"
-                        alt="Une illustration représentant un carré orange." />
-                    <img src="assets/images/challenge_wave.svg" alt="Une illustration représentant une vague rose." />
+                        alt="Illustration d'une fenêtre d'application avec des personnages aux quatre coins, symbolisant la collaboration."
+                        class="challenge__image main" />
+                    <img src="assets/images/challenge_square.svg" alt="Une illustration représentant un carré orange."
+                        class="challenge__image" />
+                    <img src="assets/images/challenge_wave.svg" alt="Une illustration représentant une vague rose."
+                        class="challenge__image" />
                 </div>
-                <div class="challenge-section-right-content">
+                <div class="challenge__right-content">
                     <h3 class="section-title">
                         Handicaps <span>INVISIBLEs</span> : Un Impact Caché, un Potentiel
                         Inexploré
                     </h3>
                     <p>
                         En France,
-                        <span class="bold-content">
-                            plus de 80% des handicaps sont INVISIBLE</span>s et souvent non déclarés, ce qui empêche de
-                        nombreux
-                        collaborateurs de bénéficier d’un accompagnement adapté.
+                        <span class="bold-content">plus de 80% des handicaps sont INVISIBLE</span>s et souvent non
+                        déclarés, ce qui empêche de
+                        nombreux collaborateurs de bénéficier d’un accompagnement adapté.
                     </p>
                     <p>
                         <span class="bold-content">Près de 12 millions de personnes sont touchées par un
@@ -234,8 +238,8 @@
                         AGEFIPH élevées.
                     </p>
                     <p>
-                        <span class="bold-content">Les freins à la déclaration, alimentés par des stéréotypes ou
-                            un manque de sensibilisation,</span>
+                        <span class="bold-content">Les freins à la déclaration, alimentés par des stéréotypes ou un
+                            manque de sensibilisation,</span>
                         limitent l’inclusion et pèsent sur la performance collective.
                     </p>
                     <p>
@@ -248,6 +252,7 @@
                 </div>
             </div>
         </section>
+
         <section class="use-cases" id="nos-piliers">
             <div class="use-cases__wrapper">
                 <div class="use-cases__header">

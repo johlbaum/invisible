@@ -115,11 +115,15 @@ nav ul li.contact-item a:hover {
 
 .banner {
     display: flex;
+	justify-content: center;
+}
+
+.banner__wrapper {
+	display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 90px 100px 0;
+	padding: 90px 100px 0;
     width: 73%;
-    margin: auto;
 }
 
 .banner__text {
@@ -285,70 +289,70 @@ nav ul li.contact-item a:hover {
   font-weight: 600;
 }
 
-/* Challenge */
+/* Challenge Section */
 
-.challenge-section {
-  padding-bottom: 80px;
+.challenge {
+    padding-bottom: 80px;
 }
 
-.challenge-wrapper {
-  width: 80%;
-  display: flex;
-  margin: auto;
-  align-items: center;
-  justify-content: space-between;
+.challenge__wrapper {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.challenge-section-left-content {
-  width: 45%;
-  position: relative;
+.challenge__left-content {
+    width: 45%;
+    position: relative;
 }
 
-.challenge-section-left-content img {
-  width: 100%;
+.challenge__image {
+    width: 100%;
 }
 
-.challenge-section-right-content {
-  width: 37%;
+.challenge__right-content {
+    width: 37%;
 }
 
-.challenge-section-right-content span {
-  font-weight: 100;
+.challenge__right-content span {
+    font-weight: 100;
 }
 
-.challenge-section-right-content p {
-  line-height: 30px;
+.challenge__right-content p {
+    line-height: 30px;
 }
 
-.challenge-section-left-content img:nth-child(1) {
-  position: absolute;
-  top: -83px;
-  left: 0;
-  width: 45%;
-  z-index: 0;
+.challenge__left-content .challenge__image:nth-child(1) {
+    position: absolute;
+    top: -83px;
+    left: 0;
+    width: 45%;
+    z-index: 0;
 }
 
-.challenge-section-left-content img:nth-child(2) {
-  z-index: 1;
-  position: relative;
+.challenge__left-content .challenge__image.main {
+    z-index: 1;
+    position: relative;
 }
 
-.challenge-section-left-content img:nth-child(3) {
-  position: absolute;
-  bottom: -20px;
-  right: 0;
-  width: 35%;
-  height: 127px;
-  z-index: 0;
+.challenge__left-content .challenge__image:nth-child(3) {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    width: 35%;
+    height: 127px;
+    z-index: 0;
 }
 
-.challenge-section-left-content img:nth-child(4) {
-  position: absolute;
-  bottom: -108px;
-  right: 97px;
-  width: 46%;
-  height: 144px;
-  z-index: 1;
+.challenge__left-content .challenge__image:nth-child(4) {
+    position: absolute;
+    bottom: -108px;
+    right: 97px;
+    width: 46%;
+    height: 144px;
+    z-index: 1;
 }
 
 /* Use Cases Section */
@@ -524,69 +528,74 @@ footer a {
 
 /* Offers Page */
 
-.offer-page-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 73%;
-  margin: auto;
-  padding: 100px 0;
+.offers {
+    padding: 20px;
 }
 
-.offer-wrapper {
-  width: 30%;
-  border: 2px solid black;
-  border-radius: 6px;
-  background-color: rgb(255, 215, 239);
+.offers__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.offers-page h1 {
-  font-size: 2.4rem;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: 100px;
-  padding: 72px 0;
-  background-color: rgb(255, 215, 239);
-  font-family: "League Spartan", serif;
+.offers__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.price-content-description {
-  padding: 10px 32px 15px 32px;
-  background-color: black;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.offer {
+    flex: 1 1 30%; /* S'adapte à 3 colonnes */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.price-content-description h3 {
-    font-size: 1.6rem;
-    font-weight: 300;
+.offer__description {
+    margin-bottom: 20px;
 }
 
-.price-content-button {
-    padding: 40px 0 25px 0;
+.offer__title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.offer__price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.offer__period {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.offer__benefits {
+    margin-bottom: 20px;
+}
+
+.offer__button {
     text-align: center;
 }
 
-.price-content-description button {
-    padding: 13px 33px;
-    cursor: pointer;
-    background-color: #fff;
-    border: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: background-color 0.4s ease;
+.offer__tag {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.price-content-description button:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+.offer__benefit {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
 }
 
-.price-content-benefits {
-    background-color: rgb(255, 215, 239);
-    padding: 10px 32px;
+.offer__benefit i {
+    color: green; /* Couleur de l'icône */
+    margin-right: 10px;
 }
+
 
 /* Contact Us Page */
 
