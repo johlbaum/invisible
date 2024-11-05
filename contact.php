@@ -1,54 +1,90 @@
-<?php
+<!DOCTYPE html>
+<html lang="fr">
 
-require __DIR__ . '/vendor/autoload.php';
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Contactez Invisible pour obtenir un devis personnalisé. Simplifiez votre politique handicap avec nos solutions de sensibilisation et d’inclusion, et optimisez vos coûts AGEFIPH tout en valorisant vos talents invisibles." />
+  <meta name="keywords"
+    content="Inclusion, sensibilisation, handicap, AGEFIPH, devis, entreprise, talents invisibles, formations inclusion" />
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Invisible - Demandez un devis" />
+  <meta property="og:description"
+    content="Obtenez un devis personnalisé avec Invisible pour une politique d'inclusion efficace et un gain économique durable." />
+  <meta property="og:image" content="assets/images/logo_2.svg" />
+  <meta property="og:url" content="https://votre-site.com/contact.html" />
+  <meta property="og:type" content="website" />
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $company = htmlspecialchars($_POST['company']);
-    $contribution = htmlspecialchars($_POST['contribution']);
-    $email = htmlspecialchars($_POST['email']);
-    $phone = htmlspecialchars($_POST['phone']);
-    $details = htmlspecialchars($_POST['details']);
+  <!-- Balises Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Invisible - Demandez un devis" />
+  <meta name="twitter:description"
+    content="Simplifiez votre politique handicap avec Invisible et valorisez vos talents invisibles." />
+  <meta name="twitter:image" content="assets/images/logo_2.svg" />
 
-    // Initialisation de PHPMailer
-    $mail = new PHPMailer(true);
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
-    try {
-        // Configuration du serveur SMTP de PHPMailer
-        $mail->isSMTP();
-        $mail->Host = 'ssl0.ovh.net';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'contact@talentinvisbile.com';
-        $mail->Password = 'Frenier77410';
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-        $mail->Port = 465;
+  <!-- Page Title -->
+  <title>Invisible - Demandez un devis</title>
 
-        // Paramètres de l’e-mail
-        $mail->setFrom('contact@talentinvisbile.com', 'Invisible');
-        $mail->addAddress('contact@talentinvisbile.com');
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-        $mail->Subject = "Demande de devis de $name";
-        $mail->Body = "
-        Nom: $name\n
-        Entreprise: $company\n
-        Contribution AGEFIPH: $contribution\n
-        Email: $email\n
-        Téléphone: $phone\n
-        Détails: $details
-        ";
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&display=swap"
+    rel="stylesheet" />
 
-        // Envoi de l’e-mail
-        if ($mail->send()) {
-            echo "Votre demande a été envoyée avec succès.";
-        } else {
-            echo "Erreur lors de l'envoi de votre demande. Veuillez réessayer.";
-        }
-    } catch (Exception $e) {
-        echo "Erreur lors de l'envoi du message : {$mail->ErrorInfo}";
-    }
-} else {
-    echo "Méthode de requête invalide.";
-}
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b14f14ea95.js" crossorigin="anonymous"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <?php include 'includes/header.php'; ?>
+  <main>
+    <section class="offers-page">
+      <h1 id="formules">Demande de devis</h1>
+      <div class="container">
+        <form action="contact.php" method="post">
+          <div class="form-group">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="company">Entreprise :</label>
+            <input type="text" id="company" name="company" required />
+          </div>
+          <div class="form-group">
+            <label for="contribution">Contribution AGEFIPH annuelle :</label>
+            <input type="number" id="contribution" name="contribution" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="details">Détails de votre demande :</label>
+            <textarea id="details" name="details" rows="4" required></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <?php include 'includes/footer.php'; ?>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Découvrez les formules d'INVISIBLE pour l'inclusion en entreprise : solutions de sensibilisation et d'accompagnement personnalisées pour optimiser votre contribution AGEFIPH et valoriser vos talents invisibles. Choisissez parmi nos formules Essentielle, Personnalisée et Premium pour une inclusion efficace et un gain économique durable." />
+  <meta name="keywords"
+    content="Inclusion en entreprise, contribution AGEFIPH, talents invisibles, formation inclusion, sensibilisation handicap, audit RQTH, formules inclusion" />
+
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Invisible - Nos offres" />
+  <meta property="og:description"
+    content="Découvrez les formules d'INVISIBLE pour l'inclusion en entreprise, incluant formation, accompagnement et optimisation de la contribution AGEFIPH." />
+  <meta property="og:image" content="assets/images/logo_2.svg" />
+  <meta property="og:url" content="https://votresite.com/offers.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Balises Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Invisible - Nos offres" />
+  <meta name="twitter:description"
+    content="Formules d'inclusion en entreprise : formation, sensibilisation, et accompagnement pour valoriser vos talents invisibles et optimiser votre contribution AGEFIPH." />
+  <meta name="twitter:image" content="assets/images/logo_2.svg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
+  <!-- Title -->
+  <title>Invisible - Nos offres</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b14f14ea95.js" crossorigin="anonymous"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <?php include 'includes/header.php'; ?>
+  <main>
+    <section class="offers-page">
+      <h1 id="formules">Explorez nos formules</h1>
+      <div class="offer-page-wrapper">
+        <div class="offer-wrapper">
+          <div class="price-content-description">
+            <h3>Formule Essentielle : Formation Standard + Abonnement</h3>
+            <p class="price">
+              <span class="price-from">À partir de</span>10 000
+              <span class="price-euro">€ HT</span>
+            </p>
+            <p class="period">Pour 12 mois</p>
+            <p class="price-benefits">
+              Formation rentable à partir de 1 RQTH détectée, générant 5 000 €
+              d’économies annuelles, soit 25 000 € sur cinq ans.
+            </p>
+            <div class="price-content-button">
+              <a href="contact.php" class="btn-outline">Demande de devis</a>
+            </div>
+          </div>
+          <div class="price-content-benefits">
+            <p class="price-tag">
+              " L’inclusion simplifiée pour un impact immédiat "
+            </p>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Audit de départ pour évaluer les pratiques actuelles en
+                matière de handicap
+              </p>
+            </div>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Formation de sensibilisation clé en main (non personnalisée)
+              </p>
+            </div>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Recommandations pour orienter l’action</p>
+            </div>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Accès à l'INVISIBLEAcadémie : FAQ et ressources pratiques pour
+                collaborateurs et managers
+              </p>
+            </div>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Abonnement sur 12 mois : accès continu à la formation, mises à
+                jour régulières, support technique
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="offer-wrapper">
+          <div class="price-content-description">
+            <h3>
+              Formule Personnalisée : Formation Adaptée + Abonnement 12 Mois
+            </h3>
+            <p class="price">
+              <span class="price-from">À partir de</span>25 000
+              <span class="price-euro">€ HT</span>
+            </p>
+            <p class="period">Pour 12 mois</p>
+            <p class="price-benefits">
+              Formation rentable à partir de 2 RQTH détectées, générant 10 000
+              € d’économies annuelles, soit 50 000 € sur cinq ans.
+            </p>
+            <div class="price-content-button">
+              <a href="contact.php" class="btn-outline">Demande de devis</a>
+            </div>
+          </div>
+          <div class="price-content-benefits">
+            <p class="price-tag">
+              " Des solutions ajustées à vos besoins d’inclusion "
+            </p>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Audit approfondi pour analyser les besoins spécifiques de
+                l’entreprise
+              </p>
+            </div>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Formation personnalisée, avec modules interactifs adaptés aux
+                enjeux internes
+              </p>
+            </div>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Accès à l'INVISIBLEAcadémie : FAQ et ressources pratiques pour
+                collaborateurs et managers
+              </p>
+            </div>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Abonnement sur 12 mois : accès illimité à la formation,
+                personnalisation continue, support technique, suivi
+                post-formation
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="offer-wrapper">
+          <div class="price-content-description">
+            <h3>
+              Formule Premium : Formation Personnalisée + Accompagnement
+              Digital + Abonnement 12 Mois
+            </h3>
+            <p class="price">
+              <span class="price-from">À partir de</span>50 000
+              <span class="price-euro">€ HT</span>
+            </p>
+            <p class="period">Pour 12 mois</p>
+            <p class="price-benefits">
+              Formation rentable à partir de 4 RQTH détectées, générant 20 000
+              € d’économies annuelles, soit 100 000 € sur cinq ans.
+            </p>
+            <div class="price-content-button">
+              <a href="contact.php" class="btn-outline">Demande de devis</a>
+            </div>
+          </div>
+          <div class="price-content-benefits">
+            <p class="price-tag">
+              " Une inclusion durable avec accompagnement de A à Z "
+            </p>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Audit approfondi pour établir un plan d’action sur-mesure</p>
+            </div>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Formation entièrement personnalisée et spécifique aux besoins
+                de l’entreprise
+              </p>
+            </div>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Coaching pour les équipes RH et les managers, suivi des
+                résultats et reporting
+              </p>
+            </div>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Accès à l'INVISIBLEAcadémie : FAQ et ressources pratiques pour
+                collaborateurs et managers
+              </p>
+            </div>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Boîte mail dédiée pour répondre aux questions des
+                collaborateurs tout au long de l’année
+              </p>
+            </div>
+            <div class="price-icon-benefit">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Abonnement sur 12 mois pour un suivi et un accompagnement
+                prolongé
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <?php include 'includes/footer.php'; ?>
+</body>
+
+</html>
