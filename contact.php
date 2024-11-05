@@ -19,16 +19,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Configuration du serveur SMTP de PHPMailer
         $mail->isSMTP();
-        $mail->Host = 'smtp.ovh.com';
+        $mail->Host = 'ssl0.ovh.net';
         $mail->SMTPAuth = true;
-        $mail->Username = 'contact@invisbile.com'; // Votre adresse e-mail pro
+        $mail->Username = 'contact@talentinvisbile.com'; // Votre adresse e-mail pro
         $mail->Password = 'Frenier77410'; // Mot de passe de l’e-mail
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Pour SSL
+        $mail->Port = 465; // Port pour SSL
 
         // Paramètres de l’e-mail
-        $mail->setFrom('contact@invisbile.com', 'Invisible');
-        $mail->addAddress('contact@invisbile.com'); // Destinataire
+        $mail->setFrom('contact@talentinvisbile.com', 'Invisible');
+        $mail->addAddress('contact@talentinvisbile.com'); // Destinataire
 
         $mail->Subject = "Demande de devis de $name";
         $mail->Body = "
