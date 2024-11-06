@@ -210,11 +210,11 @@ nav ul li.contact-item a:hover {
   justify-content: space-between;
 }
 
-.about__left-content {
+.about__left-text {
   width: 45%;
 }
 
-.about__right-content {
+.about__right-text {
   width: 45%;
 }
 
@@ -224,7 +224,7 @@ nav ul li.contact-item a:hover {
   font-size: 1.1rem;
 }
 
-.about__left-content p {
+.about__left-text p {
   line-height: 30px;
 }
 
@@ -303,7 +303,7 @@ nav ul li.contact-item a:hover {
     justify-content: space-between;
 }
 
-.challenge__left-content {
+.challenge__images {
     width: 45%;
     position: relative;
 }
@@ -312,19 +312,19 @@ nav ul li.contact-item a:hover {
     width: 100%;
 }
 
-.challenge__right-content {
+.challenge__text {
     width: 37%;
 }
 
-.challenge__right-content span {
+.challenge__text span {
     font-weight: 100;
 }
 
-.challenge__right-content p {
+.challenge__text p {
     line-height: 30px;
 }
 
-.challenge__left-content .challenge__image:nth-child(1) {
+.challenge__images .challenge__image:nth-child(1) {
     position: absolute;
     top: -83px;
     left: 0;
@@ -332,12 +332,12 @@ nav ul li.contact-item a:hover {
     z-index: 0;
 }
 
-.challenge__left-content .challenge__image.main {
+.challenge__images .challenge__image.main {
     z-index: 1;
     position: relative;
 }
 
-.challenge__left-content .challenge__image:nth-child(3) {
+.challenge__images .challenge__image:nth-child(3) {
     position: absolute;
     bottom: -20px;
     right: 0;
@@ -346,7 +346,7 @@ nav ul li.contact-item a:hover {
     z-index: 0;
 }
 
-.challenge__left-content .challenge__image:nth-child(4) {
+.challenge__images .challenge__image:nth-child(4) {
     position: absolute;
     bottom: -108px;
     right: 97px;
@@ -394,15 +394,15 @@ nav ul li.contact-item a:hover {
     gap: 80px; 
 }
 
-/* Prices Section */
+/* Offer Section */
 
-.prices {
+.offer {
     width: 100%;
     background-color: rgba(232, 230, 230, 0.4);
     padding: 125px 0 70px 0;
 }
 
-.prices__wrapper {
+.offer__wrapper {
     width: 73%;
     margin: auto;
     display: flex;
@@ -410,78 +410,78 @@ nav ul li.contact-item a:hover {
     align-items: center;
 }
 
-.prices__left-content {
+.offer__intro-left-text {
     width: 40%;
 }
 
-.prices__content-wrapper {
+.offer__content-wrapper {
     width: 45%;
     border: 2px solid black;
     border-radius: 6px;
     line-height: 30px;
 }
 
-.prices__left-content p {
+.offer__intro-left-text p {
     line-height: 30px;
 }
 
-.prices__left-content p:last-of-type {
+.offer__intro-left-text p:last-of-type {
     margin-bottom: 57px;
 }
 
-.prices__item-description {
+.offer__summary {
     padding: 10px 32px 15px 32px;
     background-color: black;
     color: #fff;
 }
 
-.prices__item-description h3 {
+.offer__summary h3 {
     font-size: 1.6rem;
     font-weight: 300;
 }
 
-.prices__item-benefits {
+.offer__details {
     background-color: rgb(255, 215, 239);
     padding: 10px 32px;
 }
 
-.prices__item-price-from {
+.offer__price-from {
     font-size: 0.8rem;
     padding-right: 5px;
 }
 
-.prices__item-price {
+.offer__price {
     font-size: 2rem;
     font-weight: bolder;
     margin-bottom: 5px;
 }
 
-.prices__item-price-euro {
+.offer__price-euro {
     font-size: 1.2rem;
     font-weight: 100;
     position: relative;
     top: -19px;
 }
 
-.prices__item-period {
+.offer__duration {
     margin-top: 0;
 }
 
-.prices__item-tag {
+.offer__tagline {
     font-size: 1.3rem;
     font-weight: 400;
 }
 
-.prices__icon-benefit {
+.prices__icon-feature {
     display: flex;
     align-items: center;
 }
 
-.prices__icon-benefit i {
+.prices__icon-feature i {
     padding-right: 15px;
 }
 
-.prices__item-button {
+.offer__contact-button {
     padding: 47px 0 57px 0;
     text-align: center;
 }
@@ -651,7 +651,6 @@ button {
 /* RESPONSIVE */ 
 
 /* Burger Button */
-
 .burger {
   display: none;
   flex-direction: column;
@@ -671,21 +670,19 @@ button {
 }
 
 /* Burger Animation */
-
 .burger.open span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 6px);
+  transform: rotate(45deg) translate(5px, 6px);
 }
 
 .burger.open span:nth-child(2) {
-    opacity: 0; 
+  opacity: 0; 
 }
 
 .burger.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -7px);
+  transform: rotate(-45deg) translate(5px, -7px);
 }
 
 /* Mobile Menu */
-
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -729,101 +726,61 @@ button {
 }
 
 /* Vue max-width 992px */
-
 @media (max-width: 992px) {
+  /* Responsive Banner Section */
+  .banner__image--support {
+    display: none;
+  }
 
-	/* Responsive Banner Section */
+  .banner {
+    flex-direction: column-reverse;
+    width: 90%;
+    padding-top: 30px;
+    padding: 0;
+  }
 
-    .banner__image--support {
-        display: none;
-    }
-    
-    .banner {
-        flex-direction: column-reverse;
-        width: 90%;
-        padding-top: 30px;
-		padding: 0;
-    }
+  .banner__text {
+    width: auto;
+    padding-bottom: 0;
+  }
 
-    .banner__text {
-        width: auto;
-        padding-bottom: 0;
-    }
+  .banner__title {
+    font-size: 2.6rem;
+  }
 
-    .banner__title {
-        font-size: 2.6rem;
-    }
+  .banner__description {
+    font-size: 1rem;
+    margin-bottom: 38px;
+    width: auto;
+  }
 
-    .banner__description {
-        font-size: 1rem;
-        margin-bottom: 38px;
-        width: auto;
-    }
+  .banner__images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
-    .banner__images {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+  .banner__image {
+    width: 80%;
+  }
 
-    .banner__image {
-        width: 80%;
-    }
+  .banner__icons {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 55px;
+    margin: 50px 0;
+  }
 
-    .banner__icons {
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin-top: 55px;
-        margin: 50px 0;
-    }
+  .banner__icon-wrapper img {
+    padding-right: 22px;
+  }
+  
+  .banner__icon-text {
+    font-size: 14px;
+  }
 
-    .banner__icon-wrapper img {
-        padding-right: 22px;
-    }
-    
-    .banner__icon-text {
-        font-size: 14px;
-    }
-}
-
-/* Vue max-width 768px */
-
-@media (max-width: 768px) {
-
-	/* Responsive Banner Section */
-
-    .banner__title {
-        font-size: 2.4rem;
-    }
-
-    .banner__description {
-        font-size: 0.9rem;
-    }
-
-    .banner__btn {
-        padding: 8px 16px;
-    }
-
-    .banner__icon-wrapper {
-        margin-right: 30px;
-    }
-
-    .banner__icon {
-        width: 28px;
-        padding-right: 10px;
-    }
-
-    .banner__icon-text {
-        font-size: 0.8rem;
-    }
-}
-
-/* Fin de la section Responsive Banner */
-
-
-@media (max-width: 992px) {
   body, html {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .burger {
@@ -855,7 +812,34 @@ button {
   }
 }
 
+/* Vue max-width 768px */
 @media (max-width: 768px) {
+  /* Responsive Banner Section */
+  .banner__title {
+    font-size: 2.4rem;
+  }
+
+  .banner__description {
+    font-size: 0.9rem;
+  }
+
+  .banner__btn {
+    padding: 8px 16px;
+  }
+
+  .banner__icon-wrapper {
+    margin-right: 30px;
+  }
+
+  .banner__icon {
+    width: 28px;
+    padding-right: 10px;
+  }
+
+  .banner__icon-text {
+    font-size: 0.8rem;
+  }
+
   .mobile-menu ul li a {
     font-size: 20px;
   }
@@ -869,10 +853,6 @@ button {
     top: 7px;
   }
 
-  nav ul {
-    display: none;
-  }
-
   header {
     position: relative;
     top: -20px;
@@ -883,14 +863,12 @@ button {
     width: 210px;
   }
 
-  
-
   .about {
     flex-direction: column;
-	padding: 30px 0;
+    padding: 30px 0;
   }
 
-  .about__left-content {
+  .about__left-text {
     width: 100%;
   }
 
@@ -1021,7 +999,6 @@ button {
   }
 
   /* Offers Page  */
-
   .offer-page-wrapper {
     flex-direction: column;
     padding: initial;
@@ -1047,8 +1024,7 @@ button {
     padding: 40px 0 40px 0;
   }
 
-    /* Contact us Page  */
-
+  /* Contact us Page  */
   .container {
     width: 77%;
     margin: 60px auto;
@@ -1060,6 +1036,7 @@ button {
   }
 }
 
+/* Landscape orientation */
 @media only screen and (max-width: 992px) and (orientation: landscape) {
   .banner-img-support {
     display: none;
@@ -1079,6 +1056,7 @@ button {
     display: none;
   }
 }
+
 
 
 

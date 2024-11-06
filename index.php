@@ -51,6 +51,7 @@
 <body>
     <?php include 'includes/header.php'; ?>
     <main>
+
         <section class="banner">
             <div class="banner__wrapper">
                 <div class="banner__text">
@@ -81,7 +82,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="banner__images">
                     <img src="assets/images/banner.svg" alt="Illustration principale" class="banner__image" />
                     <img src="assets/images/banner_support.webp" alt="Illustration de support"
@@ -90,14 +90,14 @@
             </div>
         </section>
 
-        <section class="about" id="apropos">
+        <section class="about" id="about">
             <div class="about__wrapper">
-                <div class="about__left-content">
+                <div class="about__left-text">
                     <h2 class="section-title">
                         Révélez les talents invisibles, valorisez votre entreprise
                     </h2>
                 </div>
-                <div class="about__right-content">
+                <div class="about__right-text">
                     <p>
                         <span class="bold-invisible">Invisible</span> transforme la
                         perception et l'intégration du handicap en entreprise.
@@ -120,6 +120,7 @@
                 </div>
             </div>
         </section>
+
         <section class="our-offers">
             <div class="our-offers__wrapper">
                 <div class="our-offers__header">
@@ -206,9 +207,10 @@
                 </div>
             </div>
         </section>
-        <section class="challenge" id="challenge">
+
+        <section class="challenge">
             <div class="challenge__wrapper">
-                <div class="challenge__left-content">
+                <div class="challenge__images">
                     <img src="assets/images/challenge_blue_round.svg" alt="Illustration représentant un rond bleu."
                         class="challenge__image" />
                     <img src="assets/images/challenge_main.svg"
@@ -219,11 +221,11 @@
                     <img src="assets/images/challenge_wave.svg" alt="Une illustration représentant une vague rose."
                         class="challenge__image" />
                 </div>
-                <div class="challenge__right-content">
-                    <h3 class="section-title">
+                <div class="challenge__text">
+                    <h2 class="section-title">
                         Handicaps <span>INVISIBLEs</span> : Un Impact Caché, un Potentiel
                         Inexploré
-                    </h3>
+                    </h2>
                     <p>
                         En France,
                         <span class="bold-content">plus de 80% des handicaps sont INVISIBLE</span>s et souvent non
@@ -253,10 +255,10 @@
             </div>
         </section>
 
-        <section class="use-cases" id="nos-piliers">
+        <section class="use-cases">
             <div class="use-cases__wrapper">
                 <div class="use-cases__header">
-                    <h3 class="section-title">Nos piliers de valeurs</h3>
+                    <h2 class="section-title">Nos piliers de valeurs</h2>
                 </div>
                 <div class="use-cases__content">
                     <div class="use-cases__item">
@@ -299,9 +301,9 @@
             </div>
         </section>
 
-        <section class="prices" id="plans-tarifaires">
-            <div class="prices__wrapper">
-                <div class="prices__left-content">
+        <section class="offer">
+            <div class="offer__wrapper">
+                <div class="offer__intro-left-text">
                     <h2 class="section-title">Explorez nos plans tarifaires</h2>
                     <p>
                         Nos solutions s'adressent à
@@ -328,50 +330,50 @@
                     </p>
                     <a href="offers.php" class="btn-filled">Voir plus</a>
                 </div>
-                <div class="prices__content-wrapper">
-                    <div class="prices__item-description">
-                        <h3>
+                <div class="offer__content-wrapper">
+                    <div class="offer__summary">
+                        <h3 class="offer__title">
                             Formule Personnalisée : Formation Adaptée + Abonnement 12 Mois
                         </h3>
-                        <p class="prices__item-price">
-                            <span class="prices__item-price-from">À partir de</span> 25 000
-                            <span class="prices__item-price-euro">€ HT</span>
+                        <p class="offer__price">
+                            <span class="offer__price-from">À partir de</span> 25 000
+                            <span class="offer__price-euro">€ HT</span>
                         </p>
-                        <p class="prices__item-period">Pour 12 mois</p>
-                        <p class="prices__item-profit">
+                        <p class="offer__duration">Pour 12 mois</p>
+                        <p class="offer__benefit">
                             Formation rentable à partir de 2 RQTH détectées, générant 10 000
                             € d’économies annuelles, soit 50 000 € sur cinq ans.
                         </p>
-                        <div class="prices__item-button">
+                        <div class="offer__contact-button">
                             <a href="contact.php" class="btn-outline">Demande de devis</a>
                         </div>
                     </div>
-                    <div class="prices__item-benefits">
-                        <p class="prices__item-tag">
+                    <div class="offer__details">
+                        <p class="offer__tagline">
                             " Des solutions ajustées à vos besoins d’inclusion "
                         </p>
-                        <div class="prices__icon-benefit">
+                        <div class="prices__icon-feature">
                             <i class="fa-solid fa-circle-check"></i>
                             <p>
                                 Audit approfondi pour analyser les besoins spécifiques de
                                 l’entreprise.
                             </p>
                         </div>
-                        <div class="prices__icon-benefit">
+                        <div class="prices__icon-feature">
                             <i class="fa-solid fa-circle-check"></i>
                             <p>
                                 Formation personnalisée, avec modules interactifs adaptés aux
                                 enjeux internes.
                             </p>
                         </div>
-                        <div class="prices__icon-benefit">
+                        <div class="prices__icon-feature">
                             <i class="fa-solid fa-circle-check"></i>
                             <p>
                                 Accès à l'INVISIBLEAcadémie : FAQ et ressources pratiques pour
                                 collaborateurs et managers.
                             </p>
                         </div>
-                        <div class="prices__icon-benefit">
+                        <div class="prices__icon-feature">
                             <i class="fa-solid fa-circle-check"></i>
                             <p>
                                 Abonnement sur 12 mois : accès illimité à la formation,
@@ -384,15 +386,15 @@
             </div>
         </section>
 
-        <section class="contact-us" id="contact">
+        <section class="contact-us">
             <div class="contact-us__wrapper">
                 <div class="contact-us__header">
-                    <h3 class="section-title">
+                    <h2 class="section-title">
                         Transformez votre engagement pour l’inclusion en économies
                         concrètes.<br /><br />
                         Contactez-nous pour découvrir comment nos solutions allient impact
                         social et performance financière !
-                    </h3>
+                    </h2>
                     <a href="contact.php" class="btn-filled contact-us__btn">Demande de devis</a>
                 </div>
                 <div class="contact-us__content">

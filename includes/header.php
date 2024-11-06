@@ -15,8 +15,8 @@
     <!-- Menu de navigation principal, caché pour mobile -->
     <nav class="desktop-menu" aria-label="Main navigation">
         <ul>
-            <li><a href="index.php#accueil">Accueil</a></li>
-            <li><a href="index.php#apropos">À propos</a></li>
+            <li><a href="index.php#home">Accueil</a></li>
+            <li><a href="index.php#about">À propos</a></li>
             <li><a href="offers.php">Nos Formules</a></li>
             <li class="contact-item">
                 <a href="contact.php">Demande de devis</a>
@@ -27,8 +27,8 @@
     <!-- Menu de navigation mobile -->
     <div class="mobile-menu">
         <ul>
-            <li><a href="index.php#accueil">Accueil</a></li>
-            <li><a href="index.php#apropos">À propos</a></li>
+            <li><a href="index.php#home">Accueil</a></li>
+            <li><a href="index.php#about">À propos</a></li>
             <li><a href="offers.html">Nos Formules</a></li>
             <li class="contact-item">
                 <a href="contact.html">Demande de devis</a>
