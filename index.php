@@ -53,7 +53,7 @@
     <main>
 
         <section class="banner">
-            <div class="banner__wrapper">
+            <div class="banner__wrapper wrapper--narrow">
                 <div class="banner__text">
                     <h1 class="banner__title">Sensibiliser. Détecter. Accompagner.</h1>
                     <p class="banner__description">
@@ -65,7 +65,7 @@
                         réduit vos coûts tout en valorisant la diversité au sein de votre
                         entreprise.
                     </p>
-                    <a href="contact.php" class="banner__btn">Demande de devis</a>
+                    <a href="contact.php" class="btn-filled">Demande de devis</a>
 
                     <div class="banner__icons">
                         <div class="banner__icon-wrapper">
@@ -91,7 +91,7 @@
         </section>
 
         <section class="about" id="about">
-            <div class="about__wrapper">
+            <div class="about__wrapper wrapper--narrow wrapper--padded">
                 <div class="about__left-text">
                     <h2 class="section-title">
                         Révélez les talents invisibles, valorisez votre entreprise
@@ -103,7 +103,7 @@
                         perception et l'intégration du handicap en entreprise.
                     </p>
                     <p>
-                        Nous<span class="bold-content">sensibilisons vos équipes, détectons les talents
+                        Nous <span class="bold-content">sensibilisons vos équipes, détectons les talents
                             INVISIBLEs et les accompagnons tout au long de leur
                             parcours.</span>
                     </p>
@@ -122,7 +122,7 @@
         </section>
 
         <section class="our-offers">
-            <div class="our-offers__wrapper">
+            <div class="our-offers__wrapper wrapper--narrow wrapper--padded">
                 <div class="our-offers__header">
                     <h2 class="section-title">Notre offre</h2>
                     <p>
@@ -209,7 +209,7 @@
         </section>
 
         <section class="challenge">
-            <div class="challenge__wrapper">
+            <div class="challenge__wrapper wrapper--narrow">
                 <div class="challenge__images">
                     <img src="assets/images/challenge_blue_round.svg" alt="Illustration représentant un rond bleu."
                         class="challenge__image" />
@@ -256,7 +256,7 @@
         </section>
 
         <section class="use-cases">
-            <div class="use-cases__wrapper">
+            <div class="use-cases__wrapper wrapper--narrow wrapper--padded">
                 <div class="use-cases__header">
                     <h2 class="section-title">Nos piliers de valeurs</h2>
                 </div>
@@ -301,9 +301,9 @@
             </div>
         </section>
 
-        <section class="offer">
-            <div class="offer__wrapper">
-                <div class="offer__intro-left-text">
+        <section class="pricing">
+            <div class="pricing__wrapper wrapper--narrow wrapper--padded">
+                <div class="pricing__intro-left-text">
                     <h2 class="section-title">Explorez nos plans tarifaires</h2>
                     <p>
                         Nos solutions s'adressent à
@@ -330,50 +330,50 @@
                     </p>
                     <a href="offers.php" class="btn-filled">Voir plus</a>
                 </div>
-                <div class="offer__content-wrapper">
-                    <div class="offer__summary">
-                        <h3 class="offer__title">
+                <div class="pricing__content-wrapper">
+                    <div class="pricing__summary">
+                        <h3 class="pricing__title">
                             Formule Personnalisée : Formation Adaptée + Abonnement 12 Mois
                         </h3>
-                        <p class="offer__price">
-                            <span class="offer__price-from">À partir de</span> 25 000
-                            <span class="offer__price-euro">€ HT</span>
+                        <p class="pricing__price">
+                            <span class="pricing__price-from">À partir de</span> 25 000
+                            <span class="pricing__price-euro">€ HT</span>
                         </p>
-                        <p class="offer__duration">Pour 12 mois</p>
-                        <p class="offer__benefit">
+                        <p class="pricing__duration">Pour 12 mois</p>
+                        <p class="pricing__benefit">
                             Formation rentable à partir de 2 RQTH détectées, générant 10 000
                             € d’économies annuelles, soit 50 000 € sur cinq ans.
                         </p>
-                        <div class="offer__contact-button">
+                        <div class="pricing__contact-button">
                             <a href="contact.php" class="btn-outline">Demande de devis</a>
                         </div>
                     </div>
-                    <div class="offer__details">
-                        <p class="offer__tagline">
+                    <div class="pricing__details">
+                        <p class="pricing__tagline">
                             " Des solutions ajustées à vos besoins d’inclusion "
                         </p>
-                        <div class="prices__icon-feature">
+                        <div class="pricing__icon-feature">
                             <i class="fa-solid fa-circle-check"></i>
                             <p>
                                 Audit approfondi pour analyser les besoins spécifiques de
                                 l’entreprise.
                             </p>
                         </div>
-                        <div class="prices__icon-feature">
+                        <div class="pricing__icon-feature">
                             <i class="fa-solid fa-circle-check"></i>
                             <p>
                                 Formation personnalisée, avec modules interactifs adaptés aux
                                 enjeux internes.
                             </p>
                         </div>
-                        <div class="prices__icon-feature">
+                        <div class="pricing__icon-feature">
                             <i class="fa-solid fa-circle-check"></i>
                             <p>
                                 Accès à l'INVISIBLEAcadémie : FAQ et ressources pratiques pour
                                 collaborateurs et managers.
                             </p>
                         </div>
-                        <div class="prices__icon-feature">
+                        <div class="pricing__icon-feature">
                             <i class="fa-solid fa-circle-check"></i>
                             <p>
                                 Abonnement sur 12 mois : accès illimité à la formation,
@@ -387,7 +387,7 @@
         </section>
 
         <section class="contact-us">
-            <div class="contact-us__wrapper">
+            <div class="contact-us__wrapper wrapper--narrow">
                 <div class="contact-us__header">
                     <h2 class="section-title">
                         Transformez votre engagement pour l’inclusion en économies
