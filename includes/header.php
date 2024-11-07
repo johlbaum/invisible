@@ -29,9 +29,9 @@
         <ul>
             <li><a href="index.php#home">Accueil</a></li>
             <li><a href="index.php#about">À propos</a></li>
-            <li><a href="offers.html">Nos Formules</a></li>
+            <li><a href="offers.php">Nos Formules</a></li>
             <li class="contact-item">
-                <a href="contact.html">Demande de devis</a>
+                <a href="contact.php">Demande de devis</a>
             </li>
         </ul>
     </div>

@@ -206,7 +206,7 @@
 								de l’ensemble des tâches liées à la déclaration et au suivi des handicaps.</p>
 						</div>
 						<p class="offer__tag">
-							" Une inclusion durable avec accompagnement de A à Z "
+							Une inclusion durable avec accompagnement de A à Z.
 						</p>
 					</div>
 				</div>

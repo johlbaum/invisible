@@ -65,7 +65,7 @@
                         réduit vos coûts tout en valorisant la diversité au sein de votre
                         entreprise.
                     </p>
-                    <a href="contact.php" class="btn-filled">Demande de devis</a>
+                    <a href="contact.php" class="btn-filled">Contactez-nous</a>
 
                     <div class="banner__icons">
                         <div class="banner__icon-wrapper">
@@ -411,7 +411,7 @@
                         Contactez-nous pour découvrir comment nos solutions allient impact
                         social et performance financière !
                     </h2>
-                    <a href="contact.php" class="btn-filled contact-us__btn">Demande de devis</a>
+                    <a href="contact.php" class="btn-filled contact-us__btn">Contactez-nous</a>
                 </div>
                 <div class="contact-us__content">
                     <img src="assets/images/contact_us.svg"

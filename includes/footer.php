@@ -5,16 +5,6 @@
         </div>
         <div class="footer__content">
             <div class="footer__content-wrapper">
-                <div class="footer__title-header">
-                    <p>Contact :</p>
-                </div>
-                <div class="footer__content-contact__address">
-                    <p>33200, Bordeaux</p>
-                </div>
-                <div class="footer__content-contact__phone">
-                    <p>Questions générales :</p>
-                    <p>06 87 99 07 25</p>
-                </div>
             </div>
             <div class="footer__content-wrapper">
                 <div class="footer__title-header">

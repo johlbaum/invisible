@@ -917,10 +917,7 @@ button:disabled {
 	}
 
 	header {
-		position: relative;
-		top: -20px;
-		margin: 0;
-		padding: 0;
+		padding: 0 20px;
 	}
 
 	header .logo img {
@@ -1021,6 +1018,10 @@ button:disabled {
 
 	/* Pricing */
 
+	.header__secondary-title {
+    	line-height: 50px;
+	}
+
 	.pricing__wrapper {
 		flex-direction: column;
 	}
@@ -1043,6 +1044,26 @@ button:disabled {
 	.footer__content {
 		gap: 0;
 		grid-template-columns: repeat(1, 1fr);
+	}
+
+	/* Contact page */
+
+	.contact__wrapper {
+		padding: 0;
+	}
+
+	/* Offers page */
+
+	.offers__wrapper {
+    	grid-template-columns: repeat(1, 1fr);
+		padding: 50px 0;
+    	width: 90%;
+	}
+
+	.form__container {
+    	width: 100%;
+		border-radius: 0;
+		padding: 40px 25px
 	}
 }
 
