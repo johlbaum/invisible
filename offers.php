@@ -48,11 +48,13 @@
 	<script src="assets/js/main.js" defer></script>
 </head>
 
-<body>
+<body class="offers-page">
 	<?php include 'includes/header.php'; ?>
 	<main>
 		<section class="offers">
-			<h1 class="offers__title" id="formules">Explorez nos formules</h1>
+			<div class="header__secondary">
+				<h1 class="header__secondary-title">Explorez nos formules</h1>
+			</div>
 			<div class="offers__wrapper">
 				<div class="offer">
 					<div class="offer__description">
@@ -67,7 +69,7 @@
 							d’économies annuelles, soit 25 000 € sur cinq ans.
 						</p>
 						<div class="offer__button">
-							<a href="contact.php" class="btn-outline">Demande de devis</a>
+							<a href="contact.php" class="btn-filled">Demande de devis</a>
 						</div>
 					</div>
 					<div class="offer__benefits-content">
@@ -122,7 +124,7 @@
 							€ d’économies annuelles, soit 50 000 € sur cinq ans.
 						</p>
 						<div class="offer__button">
-							<a href="contact.php" class="btn-outline">Demande de devis</a>
+							<a href="contact.php" class="btn-filled">Demande de devis</a>
 						</div>
 					</div>
 					<div class="offer__benefits-content">
@@ -176,7 +178,7 @@
 							€ d’économies annuelles, soit 100 000 € sur cinq ans.
 						</p>
 						<div class="offer__button">
-							<a href="contact.php" class="btn-outline">Demande de devis</a>
+							<a href="contact.php" class="btn-filled">Demande de devis</a>
 						</div>
 					</div>
 					<div class="offer__benefits-content">

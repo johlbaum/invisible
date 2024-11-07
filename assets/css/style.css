@@ -70,6 +70,17 @@ font-weight: 600!important;
 	padding: 120px 0;
 }
 
+.header__secondary {
+	background-color: rgb(255, 215, 239);
+    text-align: center;
+    padding: 100px 0 50px 0;
+}
+
+.header__secondary-title {
+	font-size: 2.7rem;
+    margin: 0;
+}
+
 /* Header */
 
 header {
@@ -77,12 +88,11 @@ display: flex;
 align-items: center;
 height: 126px;
 justify-content: space-between;
-padding-right: 20px;
-margin: 0 150px;
+padding: 0 150px;
 }
 
 header .logo img {
-width: 300px;
+width: 220px;
 }
 
 nav ul {
@@ -121,6 +131,11 @@ transition: background-color 0.3s ease, color 0.3s ease;
 nav ul li.contact-item a:hover {
 background-color: rgba(255, 191, 35, 0.8);
 }
+
+nav ul li:last-child a {
+  margin-right: 0;
+}
+
 
 /* Banner */
 
@@ -489,28 +504,31 @@ text-decoration: none;
 
 /* Offers Page */
 
-.offers {
-	padding: 20px;
-}
+/* Header Offers Page */
 
-.offers__title {
-	font-size: 2rem;
-	margin-bottom: 20px;
+.offers-page header {
+    background-color: rgb(255, 215, 239); 
 }
 
 .offers__wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    padding: 50px;
+    width: 80%;
+    margin: auto;
 }
 
 .offer__description {
-	margin-bottom: 20px;
+    background-color: rgb(255, 191, 35);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+	padding: 35px 30px;
 }
 
 .offer__title {
 	font-size: 1.5rem;
-	margin-bottom: 10px;
+	margin: 0;
 }
 
 .offer__price {
@@ -537,6 +555,13 @@ text-decoration: none;
 	margin-bottom: 10px;
 }
 
+.offer__benefits-content {
+	padding: 35px 30px;
+	border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+	background-color: rgb(255, 215, 239);
+}
+
 .offer__benefit {
 	display: flex;
 	align-items: center;
@@ -551,9 +576,19 @@ text-decoration: none;
 
 /* Contact Us Page */
 
+.contact-page header {
+    background-color: rgb(255, 215, 239); 
+}
+
+.contact__wrapper {
+	background-color: rgba(232, 230, 230, 0.4);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 .container {
 max-width: 600px;
-margin: 75px auto;
 background-color: #fff;
 padding: 20px;
 border-radius: 8px;

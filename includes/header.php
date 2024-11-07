@@ -1,7 +1,7 @@
 <header>
     <div class="logo">
         <a href="index.php">
-            <img src="assets/images/logo_2.svg" alt="Le logo de la société Invisible." />
+            <img src="assets/images/logo.png" alt="Le logo de la société Invisible." />
         </a>
     </div>
 
