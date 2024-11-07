@@ -79,7 +79,7 @@
 						<label for="details">Détails de votre demande :</label>
 						<textarea id="details" name="details" rows="4" required></textarea>
 					</div>
-					<button type="submit">Envoyer</button>
+					<button type="submit" id="submitButton">Envoyer</button>
 				</form>
 
 				<!-- Spinner -->
@@ -87,7 +87,8 @@
 
 				<!-- Message de confirmation -->
 				<div id="confirmationMessage" class="confirmation-message" style="display: none;">
-					Votre demande a bien été envoyée. Nous vous contacterons sous peu.
+					<p>Votre demande a bien été envoyée. Nous vous contacterons sous peu.</p>
+					<p>Vous allez être redirigé vers la page d'accueil...</p>
 				</div>
 			</div>
 		</section>

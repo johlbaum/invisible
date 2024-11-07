@@ -27,17 +27,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 465;
 
         // Paramètres de l’e-mail
-        $mail->setFrom('contact@talentinvisbile.com', 'Invisible');
+        $mail->setFrom($email, $name); // L'email de l'utilisateur et son nom dans l'en-tête
+
         $mail->addAddress('contact@talentinvisbile.com');
 
         $mail->Subject = "Demande de devis de $name";
+
+        $mail->isHTML(true);
+        $mail->CharSet = 'UTF-8';
+
+        // Corps du message en HTML
         $mail->Body = "
-        Nom: $name\n
-        Entreprise: $company\n
-        Contribution AGEFIPH: $contribution\n
-        Email: $email\n
-        Téléphone: $phone\n
-        Détails: $details
+        <h3>Demande de devis de $name</h3>
+        <p><strong>Nom:</strong> $name</p>
+        <p><strong>Entreprise:</strong> $company</p>
+        <p><strong>Contribution AGEFIPH:</strong> $contribution</p>
+        <p><strong>Email:</strong> $email</p>
+        <p><strong>Téléphone:</strong> $phone</p>
+        <p><strong>Détails:</strong> $details</p>
         ";
 
         // Envoi de l’e-mail

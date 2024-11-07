@@ -600,34 +600,36 @@ cursor: pointer;
 transition: background-color 0.3s;
 }
 
-/* Spinner mail */
-
+/* Spinner */
 .spinner {
-	width: 40px;
-	height: 40px;
-	border: 4px solid rgba(0, 0, 0, 0.1);
-	border-top-color: #3498db;
-	border-radius: 50%;
-	animation: spin 1s infinite linear;
-	margin: 20px auto;
+    border: 4px solid #f3f3f3; /* Couleur de fond */
+    border-top: 4px solid #3498db; /* Couleur de la bordure du spinner */
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 2s linear infinite;
+    display: none;
 }
 
 @keyframes spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
-/* Message de confirmation mail */
+/* Style du bouton désactivé */
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
 
+/* Style du message de confirmation */
 .confirmation-message {
-	font-size: 1.2em;
-	color: #4caf50;
-	margin-top: 20px;
-	text-align: center;
+    display: none;
+    background-color: #dff0d8;
+    padding: 10px;
+    border: 1px solid #d0e9c6;
+    color: #3c763d;
+    margin-top: 20px;
 }
 
 

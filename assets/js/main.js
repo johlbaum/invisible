@@ -1,17 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Burger menu
-
   const mobileMenu = document.querySelector('.mobile-menu');
   const burgerButton = document.querySelector('.burger');
   const menuLinks = document.querySelectorAll('.mobile-menu ul li a');
 
-  // Ouvrir/Fermer le menu quand on clique sur le bouton burger
   burgerButton.addEventListener('click', () => {
     mobileMenu.classList.toggle('show');
     burgerButton.classList.toggle('open');
   });
 
-  // Fermer le menu mobile quand on clique sur un lien du menu
   menuLinks.forEach((link) => {
     link.addEventListener('click', () => {
       mobileMenu.classList.remove('show');
@@ -19,39 +16,53 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // Mail
   const form = document.getElementById('contactForm');
   const spinner = document.getElementById('spinner');
   const confirmationMessage = document.getElementById('confirmationMessage');
+  const submitButton = document.getElementById('submitButton');
 
-  // Form
-  form.addEventListener('submit', async function (event) {
-    event.preventDefault();
+  form.addEventListener('submit', function (event) {
+    event.preventDefault(); // Empêche la soumission immédiate du formulaire
 
-    // Affiche le spinner
-    spinner.style.display = 'block';
+    // Désactive le bouton et affiche le spinner
+    submitButton.disabled = true;
+    submitButton.textContent = 'Envoi en cours...';
+    spinner.style.display = 'inline-block';
 
-    // Envoie du formulaire
+    // Envoi du formulaire via AJAX pour éviter une redirection avant l'envoi
     const formData = new FormData(form);
 
-    try {
-      const response = await fetch('./handlers/contact_handler.php', {
-        method: 'POST',
-        body: formData,
+    // Envoi du formulaire avec Fetch
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        // Vérifie la réponse du serveur
+        if (data.includes('Votre demande a été envoyée avec succès')) {
+          spinner.style.display = 'none';
+          confirmationMessage.style.display = 'block';
+
+          // Redirige après un délai pour permettre à l'utilisateur de voir le message
+          setTimeout(function () {
+            window.location.href = 'index.php'; // Redirection vers la page d'accueil
+          }, 3000);
+        } else {
+          // En cas d'erreur
+          alert("Erreur lors de l'envoi du message");
+          submitButton.disabled = false;
+          submitButton.textContent = 'Envoyer';
+          spinner.style.display = 'none';
+        }
+      })
+      .catch((error) => {
+        console.error('Erreur:', error);
+        alert('Erreur de connexion, veuillez réessayer.');
+        submitButton.disabled = false;
+        submitButton.textContent = 'Envoyer';
+        spinner.style.display = 'none';
       });
-
-      // Cache le spinner une fois terminé
-      spinner.style.display = 'none';
-
-      if (response.ok) {
-        // Affiche le message de confirmation
-        confirmationMessage.style.display = 'block';
-        form.reset();
-      } else {
-        alert("Erreur lors de l'envoi. Veuillez réessayer.");
-      }
-    } catch (error) {
-      alert('Une erreur est survenue. Veuillez réessayer.');
-      spinner.style.display = 'none';
-    }
   });
 });
