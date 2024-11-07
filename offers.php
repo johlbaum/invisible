@@ -58,162 +58,156 @@
 			<div class="offers__wrapper">
 				<div class="offer">
 					<div class="offer__description">
-						<h3 class="offer__title">Formule Essentielle : Formation Standard + Abonnement</h3>
+						<h3 class="offer__title">Formule Essentielle</h3>
 						<p class="offer__price">
-							<span class="offer__price-from">À partir de</span> 10 000
-							<span class="offer__price-euro">€ HT</span>
+							<span class="offer__price-from">À partir de</span> 800
+							<span class="offer__price-euro">€ HT / mois</span>
 						</p>
-						<p class="offer__period">Pour 12 mois</p>
+						<p class="offer__period">(sous réserve d'un abonnement de 12 mois)</p>
 						<p class="offer__benefits">
-							Formation rentable à partir de 1 RQTH détectée, générant 5 000 €
-							d’économies annuelles, soit 25 000 € sur cinq ans.
+							Une solution clé en main pour sensibiliser rapidement vos équipes au handicap.
+							Cette formule propose une formation standard, facilement intégrable dans votre LMS, pour
+							initier vos équipes à la sensibilisation au handicap sans personnalisation.
+
 						</p>
 						<div class="offer__button">
 							<a href="contact.php" class="btn-filled">Demande de devis</a>
 						</div>
 					</div>
 					<div class="offer__benefits-content">
+						<div class="offer__benefit">
+							<i class="fa-solid fa-circle-check"></i>
+							<p>
+								<span class="bold-content">Contenu de la formation :</span> Module standard prêt à
+								l'emploi, couvrant les bases de la
+								sensibilisation.
+							</p>
+						</div>
+						<div class="offer__benefit">
+							<i class="fa-solid fa-circle-check"></i>
+							<p>
+								<span class="bold-content">Ressources incluses :</span> Kit de communication et FAQ à
+								destination des collaborateurs,
+								managers, et RH pour encourager la sensibilisation.
+							</p>
+						</div>
+						<div class="offer__benefit">
+							<i class="fa-solid fa-circle-check"></i>
+							<p><span class="bold-content">Accompagnement humain :</span> Disponibilité de notre équipe
+								pour un suivi ponctuel des
+								dossiers des collaborateurs et managers, vous déchargeant de la gestion administrative
+								et des premières étapes de mise en place.</p>
+						</div>
 						<p class="offer__tag">
-							" L’inclusion simplifiée pour un impact immédiat "
+							<span class="bold-content">Idéale pour :</span> Les entreprises qui cherchent une solution
+							rapide, avec un accompagnement
+							léger pour gérer les dossiers sans alourdir leur quotidien RH.
 						</p>
-						<div class="offer__benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>
-								Audit de départ pour évaluer les pratiques actuelles en
-								matière de handicap
-							</p>
-						</div>
-						<div class="offer__benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>
-								Formation de sensibilisation clé en main (non personnalisée)
-							</p>
-						</div>
-						<div class="offer__benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>Recommandations pour orienter l’action</p>
-						</div>
-						<div class="offer__benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>
-								Accès à l'INVISIBLEAcadémie : FAQ et ressources pratiques pour
-								collaborateurs et managers
-							</p>
-						</div>
-						<div class="offer__benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>
-								Abonnement sur 12 mois : accès continu à la formation, mises à
-								jour régulières, support technique
-							</p>
-						</div>
 					</div>
 				</div>
 				<div class="offer">
 					<div class="offer__description">
 						<h3 class="offer__title">
-							Formule Personnalisée : Formation Adaptée + Abonnement 12 Mois
+							Formule Avancée
 						</h3>
 						<p class="offer__price">
-							<span class="offer__price-from">À partir de</span> 25 000
-							<span class="offer__price-euro">€ HT</span>
+							<span class="offer__price-from">À partir de</span> 2 000
+							<span class="offer__price-euro">€ HT / mois</span>
 						</p>
-						<p class="offer__period">Pour 12 mois</p>
+						<p class="offer__period">(sous réserve d'un abonnement de 12 mois)</p>
 						<p class="offer__benefits">
-							Formation rentable à partir de 2 RQTH détectées, générant 10 000
-							€ d’économies annuelles, soit 50 000 € sur cinq ans.
+							Une sensibilisation sur-mesure qui répond aux enjeux spécifiques de votre entreprise.
+							Cette formule adapte la formation à la culture et aux besoins de votre organisation, pour
+							favoriser une inclusion efficace et alignée avec vos valeurs.
+
 						</p>
 						<div class="offer__button">
 							<a href="contact.php" class="btn-filled">Demande de devis</a>
 						</div>
 					</div>
 					<div class="offer__benefits-content">
+
+						<div class="offer__benefit">
+							<i class="fa-solid fa-circle-check"></i>
+							<p>
+								<span class="bold-content">Contenu de la formation :</span> Modules interactifs
+								personnalisés en fonction des pratiques
+								et des défis de votre entreprise.
+							</p>
+						</div>
+						<div class="offer__benefit">
+							<i class="fa-solid fa-circle-check"></i>
+							<p>
+								<span class="bold-content">Ressources incluses :</span> Kit de communication et FAQ
+								personnalisés pour soutenir
+								collaborateurs, managers, et RH dans leurs démarches.
+							</p>
+						</div>
+						<div class="offer__benefit">
+							<i class="fa-solid fa-circle-check"></i>
+							<p>
+								<span class="bold-content">Accompagnement humain renforcé :</span> Notre équipe vous
+								accompagne activement dans le suivi
+								des dossiers, avec des points réguliers pour gérer les déclarations de handicap,
+								répondre aux questions spécifiques et soulager vos équipes RH.
+							</p>
+						</div>
 						<p class="offer__tag">
-							" Des solutions ajustées à vos besoins d’inclusion "
+							<span class="bold-content">Idéale pour :</span> Les entreprises qui souhaitent un suivi plus
+							intense et un accompagnement
+							adapté aux spécificités de leur secteur, tout en délégant la gestion administrative des
+							dossiers.
 						</p>
-						<div class="offer__benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>
-								Audit approfondi pour analyser les besoins spécifiques de
-								l’entreprise
-							</p>
-						</div>
-						<div class="offer__benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>
-								Formation personnalisée, avec modules interactifs adaptés aux
-								enjeux internes
-							</p>
-						</div>
-						<div class="offer__benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>
-								Accès à l'INVISIBLEAcadémie : FAQ et ressources pratiques pour
-								collaborateurs et managers
-							</p>
-						</div>
-						<div class="offer__benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>
-								Abonnement sur 12 mois : accès illimité à la formation,
-								personnalisation continue, support technique, suivi
-								post-formation
-							</p>
-						</div>
 					</div>
 				</div>
 				<div class="offer">
 					<div class="offer__description">
 						<h3 class="offer__title">
-							Formule Premium : Formation Personnalisée + Accompagnement
-							Digital + Abonnement 12 Mois
+							Formule Premium
 						</h3>
 						<p class="offer__price">
-							<span class="offer__price-from">À partir de</span> 50 000
-							<span class="offer__price-euro">€ HT</span>
+							<span class="offer__price-from">À partir de</span> 3 000
+							<span class="offer__price-euro">€ HT / mois</span>
 						</p>
-						<p class="offer__period">Pour 12 mois</p>
+						<p class="offer__period">(sous réserve d'un abonnement de 12 mois)</p>
 						<p class="offer__benefits">
-							Formation rentable à partir de 4 RQTH détectées, générant 20 000
-							€ d’économies annuelles, soit 100 000 € sur cinq ans.
+							Une solution complète pour ancrer une culture inclusive durable.
+							Conçue pour les organisations engagées, cette formule inclut une formation sur-mesure avec
+							un suivi approfondi pour instaurer une inclusion réelle et mesurable.
+
 						</p>
 						<div class="offer__button">
 							<a href="contact.php" class="btn-filled">Demande de devis</a>
 						</div>
 					</div>
 					<div class="offer__benefits-content">
+
+						<div class="offer__benefit">
+							<i class="fa-solid fa-circle-check"></i>
+							<p><span class="bold-content">Contenu de la formation :</span> Modules entièrement
+								sur-mesure, avec scénarios, études de
+								cas, et contenus spécifiques à vos objectifs d’inclusion.</p>
+						</div>
+						<div class="offer__benefit">
+							<i class="fa-solid fa-circle-check"></i>
+							<p>
+								<span class="bold-content">Ressources incluses :</span> Kit de communication et FAQ
+								avancés, conçus pour soutenir les
+								collaborateurs, managers et RH dans l'adhésion et l'engagement autour de l'inclusion.
+							</p>
+						</div>
+						<div class="offer__benefit">
+							<i class="fa-solid fa-circle-check"></i>
+							<p><span class="bold-content">Accompagnement humain premium :</span> Notre équipe est à vos
+								côtés tout au long de l’année,
+								prenant en charge la gestion complète des dossiers et restant disponible pour des
+								échanges réguliers avec les collaborateurs, managers, et RH. Nous assurons un suivi
+								administratif et technique pour garantir une inclusion fluide, soulageant ainsi les RH
+								de l’ensemble des tâches liées à la déclaration et au suivi des handicaps.</p>
+						</div>
 						<p class="offer__tag">
 							" Une inclusion durable avec accompagnement de A à Z "
 						</p>
-						<div class="offer__benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>Audit approfondi pour établir un plan d’action sur-mesure</p>
-						</div>
-						<div class="offer__benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>
-								Formation entièrement personnalisée et spécifique aux besoins
-								de l’entreprise
-							</p>
-						</div>
-						<div class="offer__benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>Accompagnement digital par un expert tout au long de l'année</p>
-						</div>
-						<div class="offer__benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>
-								Accès à l'INVISIBLEAcadémie : FAQ et ressources pratiques pour
-								collaborateurs et managers
-							</p>
-						</div>
-						<div class="offer__benefit">
-							<i class="fa-solid fa-circle-check"></i>
-							<p>
-								Abonnement sur 12 mois : accès illimité à la formation,
-								suivi régulier, évaluations et ajustements
-							</p>
-						</div>
 					</div>
 				</div>
 			</div>

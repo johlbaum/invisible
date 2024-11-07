@@ -4,65 +4,125 @@ document.addEventListener('DOMContentLoaded', function () {
   const burgerButton = document.querySelector('.burger');
   const menuLinks = document.querySelectorAll('.mobile-menu ul li a');
 
-  burgerButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('show');
-    burgerButton.classList.toggle('open');
-  });
-
-  menuLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.remove('show');
-      burgerButton.classList.remove('open');
+  if (burgerButton && mobileMenu) {
+    burgerButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('show');
+      burgerButton.classList.toggle('open');
     });
-  });
 
-  // Mail
+    menuLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('show');
+        burgerButton.classList.remove('open');
+      });
+    });
+  }
+
+  // Code pour le formulaire, seulement si le formulaire existe
   const form = document.getElementById('contactForm');
-  const spinner = document.getElementById('spinner-container');
-  const confirmationMessage = document.getElementById('confirmationMessage');
-  const submitButton = document.getElementById('submitButton');
+  if (form) {
+    const submitButton = document.getElementById('submitButton');
+    const spinner = document.getElementById('spinner-container');
+    const confirmationMessage = document.getElementById('confirmationMessage');
 
-  form.addEventListener('submit', function (event) {
-    event.preventDefault(); // Empêche la soumission immédiate du formulaire
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (!validateForm()) {
+        return;
+      }
+      submitButton.disabled = true;
+      submitButton.textContent = 'Envoi en cours...';
+      spinner.style.display = 'flex';
 
-    // Désactive le bouton et affiche le spinner
-    submitButton.disabled = true;
-    submitButton.textContent = 'Envoi en cours...';
-    spinner.style.display = 'flex';
+      const formData = new FormData(form);
 
-    // Envoi du formulaire via AJAX pour éviter une redirection avant l'envoi
-    const formData = new FormData(form);
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+      })
+        .then((response) => response.text())
+        .then((data) => {
+          if (data.includes('Votre demande a été envoyée avec succès')) {
+            spinner.style.display = 'none';
+            confirmationMessage.style.display = 'block';
 
-    // Envoi du formulaire avec Fetch
-    fetch(form.action, {
-      method: 'POST',
-      body: formData,
-    })
-      .then((response) => response.text())
-      .then((data) => {
-        // Vérifie la réponse du serveur
-        if (data.includes('Votre demande a été envoyée avec succès')) {
-          spinner.style.display = 'none';
-          confirmationMessage.style.display = 'block';
-
-          // Redirige après un délai pour permettre à l'utilisateur de voir le message
-          setTimeout(function () {
-            window.location.href = 'index.php'; // Redirection vers la page d'accueil
-          }, 3000); // Redirection après 3 secondes
-        } else {
-          // En cas d'erreur
-          alert("Erreur lors de l'envoi du message");
+            setTimeout(function () {
+              window.location.href = 'index.php';
+            }, 3000);
+          } else {
+            alert("Erreur lors de l'envoi du message");
+            submitButton.disabled = false;
+            submitButton.textContent = 'Envoyer';
+            spinner.style.display = 'none';
+          }
+        })
+        .catch((error) => {
+          console.error('Erreur:', error);
+          alert('Erreur de connexion, veuillez réessayer.');
           submitButton.disabled = false;
           submitButton.textContent = 'Envoyer';
           spinner.style.display = 'none';
-        }
-      })
-      .catch((error) => {
-        console.error('Erreur:', error);
-        alert('Erreur de connexion, veuillez réessayer.');
-        submitButton.disabled = false;
-        submitButton.textContent = 'Envoyer';
-        spinner.style.display = 'none';
-      });
+        });
+    });
+
+    function validateForm() {
+      let isValid = true;
+      const name = document.getElementById('name');
+      if (name.value.trim() === '') {
+        alert('Veuillez entrer votre nom.');
+        isValid = false;
+      }
+
+      const email = document.getElementById('email');
+      const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      if (!emailRegex.test(email.value)) {
+        alert('Veuillez entrer un email valide.');
+        isValid = false;
+      }
+
+      const phone = document.getElementById('phone');
+      const phoneRegex = /^[0-9]{10}$/;
+      if (!phoneRegex.test(phone.value)) {
+        alert('Veuillez entrer un numéro de téléphone valide (10 chiffres).');
+        isValid = false;
+      }
+
+      const contribution = document.getElementById('contribution');
+      if (contribution.value.trim() === '' || isNaN(contribution.value)) {
+        alert('Veuillez entrer une contribution valide.');
+        isValid = false;
+      }
+
+      const details = document.getElementById('details');
+      if (details.value.trim() === '') {
+        alert('Veuillez entrer les détails de votre demande.');
+        isValid = false;
+      }
+
+      return isValid;
+    }
+  }
+
+  // Effet d'apparition section
+  const sections = document.querySelectorAll('.fade-up');
+
+  const observerOptions = {
+    root: null, // Utilise la fenêtre du navigateur
+    rootMargin: '0px',
+    threshold: 0.3, // L'élément doit être visible à 30% pour être déclenché
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      console.log(entry.isIntersecting); // Ajouter un log pour voir si l'entrée devient visible
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible'); // Ajoute la classe visible quand la section est visible
+        observer.unobserve(entry.target); // Arrêter d'observer l'élément une fois qu'il est visible
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach((section) => {
+    observer.observe(section);
   });
 });

@@ -90,7 +90,7 @@
             </div>
         </section>
 
-        <section class="about" id="about">
+        <section class="about fade-up" id="about">
             <div class="about__wrapper wrapper--narrow wrapper--padded">
                 <div class="about__left-text">
                     <h2 class="section-title">
@@ -121,7 +121,7 @@
             </div>
         </section>
 
-        <section class="our-offers">
+        <section class="our-offers fade-up">
             <div class="our-offers__wrapper wrapper--narrow wrapper--padded">
                 <div class="our-offers__header">
                     <h2 class="section-title">Notre offre</h2>
@@ -208,7 +208,7 @@
             </div>
         </section>
 
-        <section class="challenge">
+        <section class="challenge fade-up">
             <div class="challenge__wrapper wrapper--narrow">
                 <div class="challenge__images">
                     <img src="assets/images/challenge_blue_round.svg" alt="Illustration représentant un rond bleu."
@@ -255,8 +255,8 @@
             </div>
         </section>
 
-        <section class="use-cases">
-            <div class="use-cases__wrapper wrapper--narrow wrapper--padded">
+        <section class="use-cases fade-up">
+            <div class="use-cases__wrapper wrapper--padded">
                 <div class="use-cases__header">
                     <h2 class="section-title">Nos piliers de valeurs</h2>
                 </div>
@@ -297,11 +297,25 @@
                             </p>
                         </div>
                     </div>
+                    <div class="use-cases__item">
+                        <div class="use-cases__item-description">
+                            <h3>Développer les talents et fidéliser</h3>
+                            <p>
+                                En favorisant la mobilité interne et l’évolution professionnelle, INVISIBLE renforce
+                                la
+                                fidélité des collaborateurs en situation de handicap. Cette approche réduit les
+                                coûts de
+                                recrutement et maximise le potentiel de chaque talent, renforçant la compétence
+                                globale
+                                de l’entreprise.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="pricing">
+        <section class="pricing fade-up">
             <div class="pricing__wrapper wrapper--narrow wrapper--padded">
                 <div class="pricing__intro-left-text">
                     <h2 class="section-title">Explorez nos plans tarifaires</h2>
@@ -309,15 +323,16 @@
                         Nos solutions s'adressent à
                         <span class="bold-content"> toutes les entreprises,</span> de la
                         <span class="bold-content">PME au grand groupe,</span> avec des
-                        offres digitalisées et modulables pour répondre aux besoins
+                        offres <span class="bold-content">digitalisées</span> et <span
+                            class="bold-content">modulables</span> pour répondre aux besoins
                         spécifiques de
                         <span class="bold-content">sensibilisation et d'inclusion.</span>
                     </p>
                     <p>
                         Nous vous proposons un
                         <span class="bold-content">accompagnement personnalisé</span> pour
-                        vos <span class="bold-content">collaborateurs,</span> managers, et
-                        <span class="bold-content">référents RH ou handicap,</span> afin
+                        vos <span class="bold-content">collaborateurs, managers, et
+                            référents RH ou handicap,</span> afin
                         de garantir une
                         <span class="bold-content">démarche inclusive complète.</span>
                     </p>
@@ -328,65 +343,66 @@
                         <span class="bold-content">valorisant vos talents</span> et votre
                         <span class="bold-content">marque employeur.</span>
                     </p>
-                    <a href="offers.php" class="btn-filled">Voir plus</a>
+                    <a href="offers.php" class="btn-filled">Nos formules</a>
                 </div>
                 <div class="pricing__content-wrapper">
                     <div class="pricing__summary">
                         <h3 class="pricing__title">
-                            Formule Personnalisée : Formation Adaptée + Abonnement 12 Mois
+                            Formule Avancée
                         </h3>
                         <p class="pricing__price">
-                            <span class="pricing__price-from">À partir de</span> 25 000
-                            <span class="pricing__price-euro">€ HT</span>
+                            <span class="pricing__price-from">À partir de</span> 2 000
+                            <span class="pricing__price-euro">€ HT / mois</span>
                         </p>
-                        <p class="pricing__duration">Pour 12 mois</p>
+                        <p class="pricing__duration">(sous réserve d'un abonnement de 12 mois)</p>
                         <p class="pricing__benefit">
-                            Formation rentable à partir de 2 RQTH détectées, générant 10 000
-                            € d’économies annuelles, soit 50 000 € sur cinq ans.
+                            Une sensibilisation sur-mesure qui répond aux enjeux spécifiques de votre entreprise. Cette
+                            formule adapte la formation à la culture et aux besoins de votre organisation, pour
+                            favoriser une inclusion efficace et alignée avec vos valeurs.
                         </p>
                         <div class="pricing__contact-button">
                             <a href="contact.php" class="btn-outline">Demande de devis</a>
                         </div>
                     </div>
                     <div class="pricing__details">
+
+                        <div class="pricing__icon-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>
+                                <span class="bold-content">Contenu de la formation :</span> Modules interactifs
+                                personnalisés en fonction des pratiques et
+                                des défis de votre entreprise.
+                            </p>
+                        </div>
+                        <div class="pricing__icon-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>
+                                <span class="bold-content">Ressources incluses :</span> Kit de communication et FAQ
+                                personnalisés pour soutenir
+                                collaborateurs, managers, et RH dans leurs démarches.
+                            </p>
+                        </div>
+                        <div class="pricing__icon-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>
+                                <span class="bold-content">Accompagnement humain renforcé :</span> Notre équipe vous
+                                accompagne activement dans le suivi
+                                des dossiers, avec des points réguliers pour gérer les déclarations de handicap,
+                                répondre aux questions spécifiques et soulager vos équipes RH.
+                            </p>
+                        </div>
                         <p class="pricing__tagline">
-                            " Des solutions ajustées à vos besoins d’inclusion "
+                            <span class="bold-content">Idéale pour :</span> Les entreprises qui souhaitent un suivi plus
+                            intense et un accompagnement
+                            adapté aux spécificités de leur secteur, tout en délégant la gestion administrative des
+                            dossiers.
                         </p>
-                        <div class="pricing__icon-feature">
-                            <i class="fa-solid fa-circle-check"></i>
-                            <p>
-                                Audit approfondi pour analyser les besoins spécifiques de
-                                l’entreprise.
-                            </p>
-                        </div>
-                        <div class="pricing__icon-feature">
-                            <i class="fa-solid fa-circle-check"></i>
-                            <p>
-                                Formation personnalisée, avec modules interactifs adaptés aux
-                                enjeux internes.
-                            </p>
-                        </div>
-                        <div class="pricing__icon-feature">
-                            <i class="fa-solid fa-circle-check"></i>
-                            <p>
-                                Accès à l'INVISIBLEAcadémie : FAQ et ressources pratiques pour
-                                collaborateurs et managers.
-                            </p>
-                        </div>
-                        <div class="pricing__icon-feature">
-                            <i class="fa-solid fa-circle-check"></i>
-                            <p>
-                                Abonnement sur 12 mois : accès illimité à la formation,
-                                personnalisation continue, support technique, suivi
-                                post-formation.
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact-us">
+        <section class="contact-us fade-up">
             <div class="contact-us__wrapper wrapper--narrow">
                 <div class="contact-us__header">
                     <h2 class="section-title">

@@ -44,8 +44,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b14f14ea95.js" crossorigin="anonymous"></script>
 
-    <!-- Main JS -->
-    <script src="assets/js/main.js" defer></script>
+
 </head>
 
 <body class="contact-page">
@@ -56,34 +55,36 @@
                 <h1 class="header__secondary-title">Demande de devis</h1>
             </div>
             <div class="contact__wrapper">
-                <div class="container">
-                    <form action="handlers/contact_handler.php" method="post" id="contactForm">
+                <div class="form__container">
+                    <form action="handlers/contact_handler.php" method="post" id="contactForm" autocomplete="off">
                         <div class="form-group">
-                            <label for="name">Nom :</label>
-                            <input type="text" id="name" name="name" required />
+                            <input type="text" id="name" name="name" placeholder="Nom" required
+                                autocomplete="one-time-code" autocorrect="off" autocapitalize="off" />
                         </div>
                         <div class="form-group">
-                            <label for="company">Entreprise :</label>
-                            <input type="text" id="company" name="company" required />
+                            <input type="text" id="company" name="company" placeholder="Entreprise" required
+                                autocomplete="one-time-code" autocorrect="off" autocapitalize="off" />
                         </div>
                         <div class="form-group">
-                            <label for="contribution">Contribution AGEFIPH annuelle :</label>
-                            <input type="number" id="contribution" name="contribution" required />
+                            <input type="number" id="contribution" name="contribution"
+                                placeholder="Contribution AGEFIPH annuelle" required autocomplete="one-time-code"
+                                autocorrect="off" autocapitalize="off" />
                         </div>
                         <div class="form-group">
-                            <label for="email">Email :</label>
-                            <input type="email" id="email" name="email" required />
+                            <input type="email" id="email" name="email" placeholder="Email" required
+                                autocomplete="one-time-code" autocorrect="off" autocapitalize="off" />
                         </div>
                         <div class="form-group">
-                            <label for="phone">Téléphone :</label>
-                            <input type="tel" id="phone" name="phone" required />
+                            <input type="tel" id="phone" name="phone" placeholder="Téléphone" required
+                                autocomplete="one-time-code" autocorrect="off" autocapitalize="off" />
                         </div>
                         <div class="form-group">
-                            <label for="details">Détails de votre demande :</label>
-                            <textarea id="details" name="details" rows="4" required></textarea>
+                            <textarea id="details" name="details" placeholder="Détails de votre demande" rows="4"
+                                required autocomplete="one-time-code" autocorrect="off" autocapitalize="off"></textarea>
                         </div>
-                        <button type="submit" id="submitButton">Envoyer</button>
+                        <button type="submit" id="submitButton" class="btn-filled">Envoyer ma demande</button>
                     </form>
+
 
                     <!-- Spinner -->
                     <div id="spinner-container" style="display: none;">
@@ -99,6 +100,8 @@
         </section>
     </main>
     <?php include 'includes/footer.php'; ?>
+    <!-- Main JS -->
+    <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>
