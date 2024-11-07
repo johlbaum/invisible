@@ -83,7 +83,9 @@
 				</form>
 
 				<!-- Spinner -->
-				<div id="spinner" class="spinner" style="display: none;"></div>
+				<div id="spinner-container" style="display: none;">
+					<div class="spinner"></div>
+				</div>
 
 				<!-- Message de confirmation -->
 				<div id="confirmationMessage" class="confirmation-message" style="display: none;">

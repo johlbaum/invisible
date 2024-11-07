@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Mail
   const form = document.getElementById('contactForm');
-  const spinner = document.getElementById('spinner');
+  const spinner = document.getElementById('spinner-container');
   const confirmationMessage = document.getElementById('confirmationMessage');
   const submitButton = document.getElementById('submitButton');
 
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Désactive le bouton et affiche le spinner
     submitButton.disabled = true;
     submitButton.textContent = 'Envoi en cours...';
-    spinner.style.display = 'inline-block';
+    spinner.style.display = 'flex';
 
     // Envoi du formulaire via AJAX pour éviter une redirection avant l'envoi
     const formData = new FormData(form);
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
           // Redirige après un délai pour permettre à l'utilisateur de voir le message
           setTimeout(function () {
             window.location.href = 'index.php'; // Redirection vers la page d'accueil
-          }, 3000);
+          }, 3000); // Redirection après 3 secondes
         } else {
           // En cas d'erreur
           alert("Erreur lors de l'envoi du message");
