@@ -42,7 +42,6 @@
                     <a href="">LinkedIn</a>
                     <a href="">X</a>
                 </div>
-
             </div>
         </div>
     </div>

@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Code pour le formulaire, seulement si le formulaire existe
+  // Formulaire
   const form = document.getElementById('contactForm');
   if (form) {
     const submitButton = document.getElementById('submitButton');
@@ -104,25 +104,31 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Effet d'apparition section
-  const sections = document.querySelectorAll('.fade-up');
+  if (window.innerWidth > 768) {
+    const sections = document.querySelectorAll('.fade-up');
+    const observerOptions = {
+      root: null, // Utilise la fenêtre du navigateur
+      rootMargin: '0px',
+      threshold: 0.3, // L'élément doit être visible à 30% pour être déclenché
+    };
 
-  const observerOptions = {
-    root: null, // Utilise la fenêtre du navigateur
-    rootMargin: '0px',
-    threshold: 0.3, // L'élément doit être visible à 30% pour être déclenché
-  };
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        console.log(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible'); // Ajoute la classe visible quand la section est visible
+          observer.unobserve(entry.target); // Arrêter d'observer l'élément une fois qu'il est visible
+        }
+      });
+    }, observerOptions);
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      console.log(entry.isIntersecting); // Ajouter un log pour voir si l'entrée devient visible
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible'); // Ajoute la classe visible quand la section est visible
-        observer.unobserve(entry.target); // Arrêter d'observer l'élément une fois qu'il est visible
-      }
+    sections.forEach((section) => {
+      observer.observe(section);
     });
-  }, observerOptions);
-
-  sections.forEach((section) => {
-    observer.observe(section);
-  });
+  } else {
+    // Enlevez directement les classes d'animation pour les petits écrans
+    document.querySelectorAll('.fade-up').forEach((section) => {
+      section.classList.add('visible');
+    });
+  }
 });
