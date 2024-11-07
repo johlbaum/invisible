@@ -54,7 +54,7 @@
 		<section class="offers-page">
 			<h1 id="formules">Demande de devis</h1>
 			<div class="container">
-				<form action="contact.php" method="post">
+				<form action="handlers/contact_handler.php" method="post" id="contactForm">
 					<div class="form-group">
 						<label for="name">Nom :</label>
 						<input type="text" id="name" name="name" required />
@@ -81,6 +81,14 @@
 					</div>
 					<button type="submit">Envoyer</button>
 				</form>
+
+				<!-- Spinner -->
+				<div id="spinner" class="spinner" style="display: none;"></div>
+
+				<!-- Message de confirmation -->
+				<div id="confirmationMessage" class="confirmation-message" style="display: none;">
+					Votre demande a bien été envoyée. Nous vous contacterons sous peu.
+				</div>
 			</div>
 		</section>
 	</main>
