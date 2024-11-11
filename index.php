@@ -14,7 +14,7 @@
     <meta property="og:description"
         content="INVISIBLE aide les entreprises à réduire leur contribution AGEFIPH et à valoriser leurs talents invisibles grâce à des solutions sur-mesure." />
     <meta property="og:image" content="assets/images/banner.jpg" />
-    <meta property="og:url" content="https://www.votresite.com" />
+    <meta property="og:url" content="https://www.talentinvisible.fr" />
     <meta property="og:type" content="website" />
 
     <!-- Twitter metadata -->
@@ -263,7 +263,7 @@
                 <div class="use-cases__content">
                     <div class="use-cases__item">
                         <div class="use-cases__item-description">
-                            <h3>Boostez l’inclusion, réduisez vos coûts</h3>
+                            <h3>Booster l’inclusion, réduire vos coûts</h3>
                             <p>
                                 INVISIBLE permet de détecter et de déclarer davantage de
                                 collaborateurs RQTH, réduisant ainsi la contribution AGEFIPH.
