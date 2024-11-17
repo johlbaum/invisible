@@ -13,7 +13,7 @@
     <meta property="og:title" content="Invisible - Demandez un devis" />
     <meta property="og:description"
         content="Obtenez un devis personnalisé avec Invisible pour une politique d'inclusion efficace et un gain économique durable." />
-    <meta property="og:image" content="assets/images/vignette.png" />
+    <meta property="og:image" content="https://www.talentinvisible.fr/assets/images/vignette.png" />
     <meta property="og:url" content="https://votre-site.com/contact.html" />
     <meta property="og:type" content="website" />
 
@@ -22,7 +22,7 @@
     <meta name="twitter:title" content="Invisible - Demandez un devis" />
     <meta name="twitter:description"
         content="Simplifiez votre politique handicap avec Invisible et valorisez vos talents invisibles." />
-    <meta name="twitter:image" content="assets/images/vignette.png" />
+    <meta name="twitter:image" content="https://www.talentinvisible.fr/assets/images/vignette.png" />
 
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
