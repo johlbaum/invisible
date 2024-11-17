@@ -13,7 +13,7 @@
     <meta property="og:title" content="Invisible - Inclusion et valorisation des talents" />
     <meta property="og:description"
         content="INVISIBLE aide les entreprises à réduire leur contribution AGEFIPH et à valoriser leurs talents invisibles grâce à des solutions sur-mesure." />
-    <meta property="og:image" content="assets/images/banner.jpg" />
+    <meta property="og:image" content="assets/images/vignette.png" />
     <meta property="og:url" content="https://www.talentinvisible.fr" />
     <meta property="og:type" content="website" />
 
@@ -22,7 +22,7 @@
     <meta name="twitter:title" content="Invisible - Inclusion et valorisation des talents" />
     <meta name="twitter:description"
         content="Solutions pour l'inclusion en entreprise et l'optimisation de la contribution AGEFIPH." />
-    <meta name="twitter:image" content="assets/images/banner.jpg" />
+    <meta name="twitter:image" content="assets/images/vignette.png" />
 
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
@@ -365,7 +365,6 @@
                         </div>
                     </div>
                     <div class="pricing__details">
-
                         <div class="pricing__icon-feature">
                             <i class="fa-solid fa-circle-check"></i>
                             <p>

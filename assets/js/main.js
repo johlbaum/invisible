@@ -131,4 +131,66 @@ document.addEventListener('DOMContentLoaded', function () {
       section.classList.add('visible');
     });
   }
+
+  // Ajustement des hauteurs des éléments des cards entre elles (titres, sous-titres, descriptions) dans la section "Nos offres".
+  function adjustHeights() {
+    const cardTitles = document.querySelectorAll('.our-offers__card-title');
+    const cardTaglines = document.querySelectorAll('.our-offers__card-tagline');
+    const cardDescriptions = document.querySelectorAll(
+      '.our-offers__card-description',
+    );
+
+    // Fonction pour obtenir la hauteur maximale d'un groupe d'éléments
+    function getMaxHeight(elements) {
+      let maxHeight = 0;
+      elements.forEach(function (element) {
+        maxHeight = Math.max(maxHeight, element.offsetHeight);
+      });
+      return maxHeight;
+    }
+
+    // Applique la hauteur maximale à tous les éléments
+    function setMaxHeight(elements, height) {
+      elements.forEach(function (element) {
+        element.style.height = `${height}px`;
+      });
+    }
+
+    // Ajuste la hauteur des titres
+    const maxTitleHeight = getMaxHeight(cardTitles);
+    setMaxHeight(cardTitles, maxTitleHeight);
+
+    // Ajuste la hauteur des sous-titres
+    const maxTaglineHeight = getMaxHeight(cardTaglines);
+    setMaxHeight(cardTaglines, maxTaglineHeight);
+
+    // Ajuste la hauteur des descriptions
+    const maxDescriptionHeight = getMaxHeight(cardDescriptions);
+    setMaxHeight(cardDescriptions, maxDescriptionHeight);
+  }
+
+  // Ajuste les hauteurs après que la page a fini de charger
+  adjustHeights();
+
+  // Réajuste les hauteurs si la fenêtre est redimensionnée
+  window.addEventListener('resize', adjustHeights);
+
+  // Alignement icones.
+  const iconTextWrappers = document.querySelectorAll('.banner__icon-wrapper');
+  let maxTextHeight = 0;
+
+  // Calculer la hauteur du texte le plus grand
+  iconTextWrappers.forEach((wrapper) => {
+    const iconText = wrapper.querySelector('.banner__icon-text');
+    const currentTextHeight = iconText.offsetHeight;
+    if (currentTextHeight > maxTextHeight) {
+      maxTextHeight = currentTextHeight;
+    }
+  });
+
+  // Appliquer la hauteur maximale à tous les textes
+  iconTextWrappers.forEach((wrapper) => {
+    const iconText = wrapper.querySelector('.banner__icon-text');
+    iconText.style.height = `${maxTextHeight}px`;
+  });
 });

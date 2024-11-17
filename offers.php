@@ -13,7 +13,7 @@
 	<meta property="og:title" content="Invisible - Nos offres" />
 	<meta property="og:description"
 		content="Découvrez les formules d'INVISIBLE pour l'inclusion en entreprise, incluant formation, accompagnement et optimisation de la contribution AGEFIPH." />
-	<meta property="og:image" content="assets/images/logo_2.svg" />
+	<meta property="og:image" content="assets/images/vignette.png" />
 	<meta property="og:url" content="https://votresite.com/offers.html" />
 	<meta property="og:type" content="website" />
 
@@ -22,7 +22,7 @@
 	<meta name="twitter:title" content="Invisible - Nos offres" />
 	<meta name="twitter:description"
 		content="Formules d'inclusion en entreprise : formation, sensibilisation, et accompagnement pour valoriser vos talents invisibles et optimiser votre contribution AGEFIPH." />
-	<meta name="twitter:image" content="assets/images/logo_2.svg" />
+	<meta name="twitter:image" content="assets/images/vignette.png" />
 
 	<!-- Favicon -->
 	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
@@ -49,7 +49,9 @@
 </head>
 
 <body class="offers-page">
-	<?php include 'includes/header.php'; ?>
+	<div class="offers-page-header-wrapper">
+		<?php include 'includes/header.php'; ?>
+	</div>
 	<main>
 		<section class="offers">
 			<div class="header__secondary">

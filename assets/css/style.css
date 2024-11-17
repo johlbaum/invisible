@@ -19,7 +19,7 @@ html {
 	font-size: 2.8rem;
 	font-weight: 300;
 	margin-top: 0;
-	line-height: 55px;
+	line-height: 3.4375rem;
 }
 
 .btn-filled {
@@ -62,7 +62,7 @@ html {
 }
 
 .wrapper--narrow {
-	width: 73%;
+	width: 76%;
 	margin: auto;
 }
 
@@ -101,7 +101,8 @@ header {
 	align-items: center;
 	height: 126px;
 	justify-content: space-between;
-	padding: 0 150px;
+	width: 76%;
+	margin: auto;
 }
 
 header .logo img {
@@ -168,7 +169,7 @@ nav ul li:last-child a {
 	font-family: "League Spartan", serif;
 	font-size: 3.2rem;
 	font-weight: 300;
-	line-height: 55px;
+	line-height: 3.4375rem;
 }
 
 .banner__description {
@@ -206,6 +207,7 @@ nav ul li:last-child a {
 .banner__icon-text {
 	font-size: 0.9rem;
 	min-width: 61px;
+	line-height: 1.3;
 }
 
 .banner__images {
@@ -254,6 +256,26 @@ nav ul li:last-child a {
 
 /* Our offers */
 
+.our-offers__cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 2.1875rem;
+    margin-top: 90px;
+}
+
+.our-offers__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+.our-offers__card-title,
+.our-offers__card-tagline,
+.our-offers__card-description {
+    width: 100%;
+    margin-bottom: 10px; 
+}
+
 .our-offers__header {
 	width: 50%;
 }
@@ -269,23 +291,11 @@ nav ul li:last-child a {
 	margin-right: 5px;
 }
 
-.our-offers__cards-wrapper {
-	display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-	margin-top: 90px;
-}
-
 .our-offers__card-img img {
 	border: 2px solid black;
 	border-radius: 6px;
 	font-weight: 600;
 	width: 100%;
-}
-
-.our-offers__card-description {
-	width: 100%;
-	padding-top: 20px;
 }
 
 .our-offers__card-title {
@@ -388,7 +398,6 @@ nav ul li:last-child a {
 	display: grid;
   	grid-template-columns: repeat(4, 1fr);
   	gap: 50px; 
-  	padding: 20px;
 }
 
 .use-cases__item-description p {
@@ -536,7 +545,7 @@ footer a {
 
 .footer__content {
 	display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(3, 1fr); 
     gap: 13%; 
     padding: 50px 0 20px 0;
 }
@@ -579,8 +588,8 @@ footer a {
 
 /* Offers Page */
 
-.offers-page header {
-    background-color: rgb(255, 215, 239); 
+.offers-page-header-wrapper {
+	background-color: rgb(255, 215, 239); 
 }
 
 .offers__wrapper {
@@ -649,8 +658,8 @@ footer a {
 
 /* Contact Us Page */
 
-.contact-page header {
-    background-color: rgb(255, 215, 239); 
+.contact-page-header-wrapper {
+	background-color: rgb(255, 215, 239); 
 }
 
 .contact__wrapper {
@@ -910,6 +919,7 @@ button:disabled {
 	.logo {
 		position: relative;
 		top: 7px;
+		padding: 0 12px;
 	}
 
 	nav ul {
@@ -917,7 +927,7 @@ button:disabled {
 	}
 
 	header {
-		padding: 0 20px;
+		width: 100%;
 	}
 
 	header .logo img {
@@ -992,6 +1002,10 @@ button:disabled {
 
 	.our-offers__card-img img {
 		width: 50%;
+	}
+
+	.our-offers__card-title, .our-offers__card-tagline, .our-offers__card-description {
+		height: auto!important;
 	}
 
 	/* challenge */
@@ -1086,6 +1100,21 @@ button:disabled {
 
 	.banner__image--support {
 		display: none;
+	}
+}
+
+@media (min-width: 1920px) {
+    html {
+		font-size: 30px;
+		line-height: 2;
+	}
+
+	.wrapper--padded {
+    	padding: 220px 0;
+	}
+
+	.challenge__wrapper {
+		padding-bottom: 220px;
 	}
 }
 

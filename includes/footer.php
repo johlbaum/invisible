@@ -5,10 +5,8 @@
         </div>
         <div class="footer__content">
             <div class="footer__content-wrapper">
-            </div>
-            <div class="footer__content-wrapper">
                 <div class="footer__title-header">
-                    <p>Service client :</p>
+                    <p>Contact :</p>
                 </div>
                 <div class="footer__content-service__email">
                     <p>contact@talentinvisible.fr</p>
