@@ -1096,10 +1096,26 @@ button:disabled {
 		display: none;
 	}
 
+	/* Offers */
+
+	.our-offers__cards-wrapper {
+    	gap: 1.5rem;
+	}
+
+	.our-offers__cards-wrapper {
+    	grid-template-columns: repeat(3, 1fr); 
+	}	
+
 	/* Banner */
 
 	.banner__image--support {
 		display: none;
+	}
+
+	/* Use cases */
+
+	.use-cases__content {
+    	grid-template-columns: repeat(3, 1fr);
 	}
 }
 

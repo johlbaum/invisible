@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Effet d'apparition section
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 992) {
     const sections = document.querySelectorAll('.fade-up');
     const observerOptions = {
       root: null, // Utilise la fenêtre du navigateur
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Ajustement des hauteurs des éléments des cards entre elles (titres, sous-titres, descriptions) dans la section "Nos offres".
+  // Fonction principale pour ajuster les hauteurs des éléments
   function adjustHeights() {
     const cardTitles = document.querySelectorAll('.our-offers__card-title');
     const cardTaglines = document.querySelectorAll('.our-offers__card-tagline');
@@ -143,15 +143,16 @@ document.addEventListener('DOMContentLoaded', function () {
     // Fonction pour obtenir la hauteur maximale d'un groupe d'éléments
     function getMaxHeight(elements) {
       let maxHeight = 0;
-      elements.forEach(function (element) {
+      elements.forEach((element) => {
+        element.style.height = 'auto'; // Réinitialise la hauteur avant mesure
         maxHeight = Math.max(maxHeight, element.offsetHeight);
       });
       return maxHeight;
     }
 
-    // Applique la hauteur maximale à tous les éléments
+    // Fonction pour appliquer une hauteur maximale à un groupe d'éléments
     function setMaxHeight(elements, height) {
-      elements.forEach(function (element) {
+      elements.forEach((element) => {
         element.style.height = `${height}px`;
       });
     }
@@ -169,28 +170,28 @@ document.addEventListener('DOMContentLoaded', function () {
     setMaxHeight(cardDescriptions, maxDescriptionHeight);
   }
 
-  // Ajuste les hauteurs après que la page a fini de charger
-  adjustHeights();
+  // Initialisation du ResizeObserver pour surveiller les changements de taille
+  const container = document.querySelector('.our-offers__cards-wrapper');
+  if (container) {
+    const resizeObserver = new ResizeObserver(() => {
+      adjustHeights();
+    });
 
-  // Réajuste les hauteurs si la fenêtre est redimensionnée
-  window.addEventListener('resize', adjustHeights);
+    // Observe le conteneur principal
+    resizeObserver.observe(container);
+  }
 
-  // Alignement icones.
-  const iconTextWrappers = document.querySelectorAll('.banner__icon-wrapper');
-  let maxTextHeight = 0;
+  // Ajuste les hauteurs une fois la page chargée
+  window.addEventListener('load', adjustHeights);
 
-  // Calculer la hauteur du texte le plus grand
-  iconTextWrappers.forEach((wrapper) => {
-    const iconText = wrapper.querySelector('.banner__icon-text');
-    const currentTextHeight = iconText.offsetHeight;
-    if (currentTextHeight > maxTextHeight) {
-      maxTextHeight = currentTextHeight;
-    }
-  });
+  // Optionnel : Gestion du redimensionnement avec debounce pour plus de performances
+  function debounce(func, delay) {
+    let timeout;
+    return function (...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func(...args), delay);
+    };
+  }
 
-  // Appliquer la hauteur maximale à tous les textes
-  iconTextWrappers.forEach((wrapper) => {
-    const iconText = wrapper.querySelector('.banner__icon-text');
-    iconText.style.height = `${maxTextHeight}px`;
-  });
+  window.addEventListener('resize', debounce(adjustHeights, 200));
 });
