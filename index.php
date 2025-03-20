@@ -350,11 +350,6 @@
                         <h3 class="pricing__title">
                             Formule Avancée
                         </h3>
-                        <p class="pricing__price">
-                            <span class="pricing__price-from">À partir de</span> 2 000
-                            <span class="pricing__price-euro">€ HT / mois</span>
-                        </p>
-                        <p class="pricing__duration">(sous réserve d'un abonnement de 12 mois)</p>
                         <p class="pricing__benefit">
                             Une sensibilisation sur-mesure qui répond aux enjeux spécifiques de votre entreprise. Cette
                             formule adapte la formation à la culture et aux besoins de votre organisation, pour
@@ -406,9 +401,7 @@
                 <div class="contact-us__header">
                     <h2 class="section-title">
                         Transformez votre engagement pour l’inclusion en économies
-                        concrètes.<br /><br />
-                        Contactez-nous pour découvrir comment nos solutions allient impact
-                        social et performance financière !
+                        concrètes.
                     </h2>
                     <a href="contact.php" class="btn-filled contact-us__btn">Demande de rendez-vous</a>
                 </div>

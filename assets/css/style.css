@@ -17,7 +17,7 @@ html {
 .section-title {
 	font-family: "League Spartan", serif;
 	font-size: 2.8rem;
-	font-weight: 300;
+	font-weight: 600;
 	margin-top: 0;
 	line-height: 3.4375rem;
 }
@@ -168,7 +168,7 @@ nav ul li:last-child a {
 .banner__title {
 	font-family: "League Spartan", serif;
 	font-size: 3.2rem;
-	font-weight: 300;
+	font-weight: 600;
 	line-height: 3.4375rem;
 }
 
