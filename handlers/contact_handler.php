@@ -24,15 +24,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'ssl0.ovh.net';
         $mail->SMTPAuth = true;
-        $mail->Username = "contact@talentinvisbile.fr";
-        $mail->Password = "Frenier77410";
+        $mail->Username = $_ENV['SMTP_USERNAME'];
+        $mail->Password = $_ENV['SMTP_PASSWORD'];
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
 
         // Paramètres de l’e-mail
         $mail->setFrom($email, $name);
 
-        $mail->addAddress('contact@talentinvisbile.fr');
+        $mail->addAddress('contact@talentinvisible.fr');
 
         $mail->Subject = "Demande de devis de $name";
 
