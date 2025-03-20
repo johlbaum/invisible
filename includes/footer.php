@@ -5,30 +5,9 @@
         </div>
         <div class="footer__content">
             <div class="footer__content-wrapper">
-                <div class="footer__title-header">
-                    <p>Contact :</p>
-                </div>
                 <div class="footer__content-service__email">
-                    <p>contact@talentinvisible.fr</p>
-                </div>
-            </div>
-            <div class="footer__content-wrapper">
-                <div class="footer__title-header">
-                    <p>Liens rapides :</p>
-                </div>
-                <div class="footer__content-legals__links">
-                    <a href="">Politique de cookies</a>
-                    <a href="">Mentions légales</a>
-                    <a href="">Politique de confidentialité</a>
-                </div>
-            </div>
-            <div class="footer__content-wrapper">
-                <div class="footer__title-header">
-                    <p>Suivez-nous :</p>
-                </div>
-                <div class="footer__title-follow-us">
-                    <a href="">LinkedIn</a>
-                    <a href="">X</a>
+                    <p>© 2025 | <a href="mailto:contact@talentinvisible.fr">contact@talentinvisible.fr</a> | <a
+                            href="legal.php">Mentions légales</a></p>
                 </div>
             </div>
         </div>

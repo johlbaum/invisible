@@ -19,7 +19,7 @@
             <li><a href="index.php#about">À propos</a></li>
             <li><a href="offers.php">Nos Formules</a></li>
             <li class="contact-item">
-                <a href="contact.php">Demande de devis</a>
+                <a href="contact.php">Demande de rendez-vous</a>
             </li>
         </ul>
     </nav>
@@ -31,7 +31,7 @@
             <li><a href="index.php#about">À propos</a></li>
             <li><a href="offers.php">Nos Formules</a></li>
             <li class="contact-item">
-                <a href="contact.php">Demande de devis</a>
+                <a href="contact.php">Demande de rendez-vous</a>
             </li>
         </ul>
     </div>

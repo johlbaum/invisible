@@ -79,8 +79,8 @@ html {
 .header__secondary-title {
 	font-size: 2.7rem;
     margin: 0;
+	font-weight: 700;
 }
-
 
 .fade-up {
 	opacity: 0;
@@ -536,7 +536,7 @@ footer a {
 }
 
 .footer__logo {
-	text-align: start;
+	text-align: center;
 }
 
 .footer__logo img {
@@ -544,20 +544,17 @@ footer a {
 }
 
 .footer__content {
-	display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 13%; 
-    padding: 50px 0 20px 0;
 }
 
 .footer__content-wrapper {
 	display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .footer__content-wrapper p {
 	text-align: start;
+    margin: 10px 0 0 0;
 }
 
 .footer__title-header p {
@@ -584,6 +581,10 @@ footer a {
 .footer__title-follow-us a {
 	text-align: left;
 	margin-bottom: 25px;
+}
+
+.footer__content-service__email {
+	margin-top: 10px;
 }
 
 /* Offers Page */
@@ -632,6 +633,7 @@ footer a {
 
 .offer__button {
 	text-align: center;
+	padding: 20px 0;
 }
 
 .offer__tag {
@@ -773,6 +775,22 @@ button:disabled {
     border: 1px solid #d0e9c6;
     color: #3c763d;
     margin-top: 20px;
+}
+
+/* Legal */
+
+.legal__wrapper {
+    padding: 40px 0;
+    width: 83%;
+    margin: auto;
+}
+
+.legal__wrapper h2 {
+	font-size: 2.7rem;
+}
+
+.mentions-legales__article {
+	margin-bottom: 60px;
 }
 
 /* RESPONSIVE */ 

@@ -54,7 +54,7 @@
     <main>
         <section class="contact">
             <div class="header__secondary">
-                <h1 class="header__secondary-title">Demande de devis</h1>
+                <h1 class="header__secondary-title">Demande de rendez-vous</h1>
             </div>
             <div class="contact__wrapper">
                 <div class="form__container">

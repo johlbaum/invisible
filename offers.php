@@ -61,11 +61,6 @@
 				<div class="offer">
 					<div class="offer__description">
 						<h3 class="offer__title">Formule Essentielle</h3>
-						<p class="offer__price">
-							<span class="offer__price-from">À partir de</span> 800
-							<span class="offer__price-euro">€ HT / mois</span>
-						</p>
-						<p class="offer__period">(sous réserve d'un abonnement de 12 mois)</p>
 						<p class="offer__benefits">
 							Une solution clé en main pour sensibiliser rapidement vos équipes au handicap.
 							Cette formule propose une formation standard, facilement intégrable dans votre LMS, pour
@@ -73,7 +68,7 @@
 
 						</p>
 						<div class="offer__button">
-							<a href="contact.php" class="btn-filled">Demande de devis</a>
+							<a href="contact.php" class="btn-filled">Demande de rendez-vous</a>
 						</div>
 					</div>
 					<div class="offer__benefits-content">
@@ -112,19 +107,13 @@
 						<h3 class="offer__title">
 							Formule Avancée
 						</h3>
-						<p class="offer__price">
-							<span class="offer__price-from">À partir de</span> 2 000
-							<span class="offer__price-euro">€ HT / mois</span>
-						</p>
-						<p class="offer__period">(sous réserve d'un abonnement de 12 mois)</p>
 						<p class="offer__benefits">
 							Une sensibilisation sur-mesure qui répond aux enjeux spécifiques de votre entreprise.
 							Cette formule adapte la formation à la culture et aux besoins de votre organisation, pour
 							favoriser une inclusion efficace et alignée avec vos valeurs.
-
 						</p>
 						<div class="offer__button">
-							<a href="contact.php" class="btn-filled">Demande de devis</a>
+							<a href="contact.php" class="btn-filled">Demande de rendez-vous</a>
 						</div>
 					</div>
 					<div class="offer__benefits-content">
@@ -167,19 +156,13 @@
 						<h3 class="offer__title">
 							Formule Premium
 						</h3>
-						<p class="offer__price">
-							<span class="offer__price-from">À partir de</span> 3 000
-							<span class="offer__price-euro">€ HT / mois</span>
-						</p>
-						<p class="offer__period">(sous réserve d'un abonnement de 12 mois)</p>
 						<p class="offer__benefits">
 							Une solution complète pour ancrer une culture inclusive durable.
 							Conçue pour les organisations engagées, cette formule inclut une formation sur-mesure avec
 							un suivi approfondi pour instaurer une inclusion réelle et mesurable.
-
 						</p>
 						<div class="offer__button">
-							<a href="contact.php" class="btn-filled">Demande de devis</a>
+							<a href="contact.php" class="btn-filled">Demande de rendez-vous</a>
 						</div>
 					</div>
 					<div class="offer__benefits-content">
@@ -208,7 +191,8 @@
 								de l’ensemble des tâches liées à la déclaration et au suivi des handicaps.</p>
 						</div>
 						<p class="offer__tag">
-							Une inclusion durable avec accompagnement de A à Z.
+							<span class="bold-content">Idéale pour :</span> Les entreprises qui souhaitent une inclusion
+							durable avec accompagnement de A à Z.
 						</p>
 					</div>
 				</div>

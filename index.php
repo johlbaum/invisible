@@ -65,7 +65,7 @@
                         réduit vos coûts tout en valorisant la diversité au sein de votre
                         entreprise.
                     </p>
-                    <a href="contact.php" class="btn-filled">Contactez-nous</a>
+                    <a href="contact.php" class="btn-filled">Demande de rendez-vous</a>
 
                     <div class="banner__icons">
                         <div class="banner__icon-wrapper">
@@ -361,7 +361,7 @@
                             favoriser une inclusion efficace et alignée avec vos valeurs.
                         </p>
                         <div class="pricing__contact-button">
-                            <a href="contact.php" class="btn-outline">Demande de devis</a>
+                            <a href="contact.php" class="btn-outline">Demande de rendez-vous</a>
                         </div>
                     </div>
                     <div class="pricing__details">
@@ -410,7 +410,7 @@
                         Contactez-nous pour découvrir comment nos solutions allient impact
                         social et performance financière !
                     </h2>
-                    <a href="contact.php" class="btn-filled contact-us__btn">Contactez-nous</a>
+                    <a href="contact.php" class="btn-filled contact-us__btn">Demande de rendez-vous</a>
                 </div>
                 <div class="contact-us__content">
                     <img src="assets/images/contact_us.svg"
